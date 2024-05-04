@@ -1,0 +1,794 @@
+name:                6Q
+version:             0.0.0
+github:              nobsun/6Q
+license:             BSD3
+author:              Nobuo Yamashita
+maintainer:          nobsun@sampou.org
+copyright:           © 2024, Nobuo Yamashita
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Experiment
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/nobsun/6Q#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- unicode-show
+- bytestring
+- utf8-string
+- time
+- hspec
+- main-tester
+- doctest
+- aeson
+- gloss
+- array
+- containers
+- free
+- recursion-schemes
+- vector
+
+language: GHC2021
+
+default-extensions:
+- ImplicitParams
+- ImportQualifiedPost
+- LambdaCase
+- LexicalNegation
+- MultiWayIf
+- NPlusKPatterns
+- OverloadedStrings
+- DataKinds
+- PolyKinds
+- NoStarIsType
+- TypeFamilyDependencies
+- UndecidableInstances
+
+ghc-options:
+- -Wall
+- -Wno-unticked-promoted-constructors
+- -Wno-unused-imports
+- -Wno-unused-top-binds
+- -Wno-orphans
+
+library:
+  source-dirs: src
+
+executables:
+  savings:
+    main:            Main.hs
+    source-dirs:     app/savings
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  bitwisexor:
+    main:            Main.hs
+    source-dirs:     app/bitwisexor
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  boobyprize:
+    main:            Main.hs
+    source-dirs:     app/boobyprize
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  howmany:
+    main:            Main.hs
+    source-dirs:     app/howmany
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  log2n:
+    main:            Main.hs
+    source-dirs:     app/log2n
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  samename:
+    main:            Main.hs
+    source-dirs:     app/samename
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  basek:
+    main:            Main.hs
+    source-dirs:     app/basek
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  typo:
+    main:            Main.hs
+    source-dirs:     app/typo
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  stringshifting:
+    main:            Main.hs
+    source-dirs:     app/stringshifting
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  mongeness:
+    main:            Main.hs
+    source-dirs:     app/mongeness
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  starornot:
+    main:            Main.hs
+    source-dirs:     app/starornot
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  keyencebuilding:
+    main:            Main.hs
+    source-dirs:     app/keyencebuilding
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  onandoff:
+    main:            Main.hs
+    source-dirs:     app/onandoff
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  takahashissecret:
+    main:            Main.hs
+    source-dirs:     app/takahashissecret
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  hardcalculation:
+    main:            Main.hs
+    source-dirs:     app/hardcalculation
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  triplemetre:
+    main:            Main.hs
+    source-dirs:     app/triplemetre
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  election:
+    main:            Main.hs
+    source-dirs:     app/election
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  caesarcipher:
+    main:            Main.hs
+    source-dirs:     app/caesarcipher
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  whoismissing:
+    main:            Main.hs
+    source-dirs:     app/whoismissing
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  matrixtransposition:
+    main:            Main.hs
+    source-dirs:     app/matrixtransposition
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  exponentialorquadratic:
+    main:            Main.hs
+    source-dirs:     app/exponentialorquadratic
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  integerdivision:
+    main:            Main.hs
+    source-dirs:     app/integerdivision
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  countdistinctinteger:
+    main:            Main.hs
+    source-dirs:     app/countdistinctinteger
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  pasta:
+    main:            Main.hs
+    source-dirs:     app/pasta
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  tshirt:
+    main:            Main.hs
+    source-dirs:     app/tshirt
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  minimizeordering:
+    main:            Main.hs
+    source-dirs:     app/minimizeordering
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  hitandblow:
+    main:            Main.hs
+    source-dirs:     app/hitandblow
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  gostraightandturnright:
+    main:            Main.hs
+    source-dirs:     app/gostraightandturnright
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  mex:
+    main:            Main.hs
+    source-dirs:     app/mex
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  fourpoints:
+    main:            Main.hs
+    source-dirs:     app/fourpoints
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  jogging:
+    main:            Main.hs
+    source-dirs:     app/jogging
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  perfectstring:
+    main:            Main.hs
+    source-dirs:     app/perfectstring
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  adjacentsquares:
+    main:            Main.hs
+    source-dirs:     app/adjacentsquares
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  takahashisfailure:
+    main:            Main.hs
+    source-dirs:     app/takahashisfailure
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  distancebetweentokens:
+    main:            Main.hs
+    source-dirs:     app/distancebetweentokens
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  practicalcomputing:
+    main:            Main.hs
+    source-dirs:     app/practicalcomputing
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  batters:
+    main:            Main.hs
+    source-dirs:     app/batters
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  1dpawn:
+    main:            Main.hs
+    source-dirs:     app/1dpawn
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  growthrecord:
+    main:            Main.hs
+    source-dirs:     app/growthrecord
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  intersection:
+    main:            Main.hs
+    source-dirs:     app/intersection
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  tournamentresult:
+    main:            Main.hs
+    source-dirs:     app/tournamentresult
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  fullhouse:
+    main:            Main.hs
+    source-dirs:     app/fullhouse
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  ancestor:
+    main:            Main.hs
+    source-dirs:     app/ancestor
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  nicegrid:
+    main:            Main.hs
+    source-dirs:     app/nicegrid
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  rectangledetection:
+    main:            Main.hs
+    source-dirs:     app/rectangledetection
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  124test:
+    main:            Main.hs
+    source-dirs:     app/124test
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  hammer:
+    main:            Main.hs
+    source-dirs:     app/hammer
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  484558:
+    main:            Main.hs
+    source-dirs:     app/484558
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  maintainmultiplesequences:
+    main:            Main.hs
+    source-dirs:     app/maintainmultiplesequences
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  everyoneisfriends:
+    main:            Main.hs
+    source-dirs:     app/everyoneisfriends
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  brokenrounding:
+    main:            Main.hs
+    source-dirs:     app/brokenrounding
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  playingcardsvalidation:
+    main:            Main.hs
+    source-dirs:     app/playingcardsvalidation
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  misjudgethetime:
+    main:            Main.hs
+    source-dirs:     app/misjudgethetime
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  inverseprefixsum:
+    main:            Main.hs
+    source-dirs:     app/inverseprefixsum
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  sandwichnumber:
+    main:            Main.hs
+    source-dirs:     app/sandwichnumber
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  letsgetaperfectscore:
+    main:            Main.hs
+    source-dirs:     app/letsgetaperfectscore
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  rangeswap:
+    main:            Main.hs
+    source-dirs:     app/rangeswap
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  postalcard:
+    main:            Main.hs
+    source-dirs:     app/postalcard
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  qualificationcontest:
+    main:            Main.hs
+    source-dirs:     app/qualificationcontest
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  yellowandredcard:
+    main:            Main.hs
+    source-dirs:     app/yellowandredcard
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  calltheidnumber:
+    main:            Main.hs
+    source-dirs:     app/calltheidnumber
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  asciiart:
+    main:            Main.hs
+    source-dirs:     app/asciiart
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  fillthegaps:
+    main:            Main.hs
+    source-dirs:     app/fillthegaps
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  abcdefg:
+    main:            Main.hs
+    source-dirs:     app/abcdefg
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  racecar:
+    main:            Main.hs
+    source-dirs:     app/racecar
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  defaultprice:
+    main:            Main.hs
+    source-dirs:     app/defaultprice
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  vacationtogether:
+    main:            Main.hs
+    source-dirs:     app/vacationtogether
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  tobesaikyo:
+    main:            Main.hs
+    source-dirs:     app/tobesaikyo
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  themiddleday:
+    main:            Main.hs
+    source-dirs:     app/themiddleday
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  overlappingsheets:
+    main:            Main.hs
+    source-dirs:     app/overlappingsheets
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  measure:
+    main:            Main.hs
+    source-dirs:     app/measure
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  longestpalindrome:
+    main:            Main.hs
+    source-dirs:     app/longestpalindrome
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  prefixandsuffix:
+    main:            Main.hs
+    source-dirs:     app/prefixandsuffix
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  roundrobintournament:
+    main:            Main.hs
+    source-dirs:     app/roundrobintournament
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  3smoothnumbers:
+    main:            Main.hs
+    source-dirs:     app/3smoothnumbers
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  selfpower:
+    main:            Main.hs
+    source-dirs:     app/selfpower
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  zorome:
+    main:            Main.hs
+    source-dirs:     app/zorome
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  glassandmug:
+    main:            Main.hs
+    source-dirs:     app/glassandmug
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  pentagon:
+    main:            Main.hs
+    source-dirs:     app/pentagon
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  tetrahedralnumber:
+    main:            Main.hs
+    source-dirs:     app/tetrahedralnumber
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  extendedabc:
+    main:            Main.hs
+    source-dirs:     app/extendedabc
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  frequency:
+    main:            Main.hs
+    source-dirs:     app/frequency
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  append:
+    main:            Main.hs
+    source-dirs:     app/append
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  whichisahead:
+    main:            Main.hs
+    source-dirs:     app/whichisahead
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  integerdivisionreturns:
+    main:            Main.hs
+    source-dirs:     app/integerdivisionreturns
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  farthestpoint:
+    main:            Main.hs
+    source-dirs:     app/farthestpoint
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  dentistaoki:
+    main:            Main.hs
+    source-dirs:     app/dentistaoki
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  6Q:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -rtsopts
+    # - -threaded
+    # - -with-rtsopts=-N
+    dependencies:
+    - 6Q
+
+tests:
+  6Q-test:
+    main:                spec.hs
+    source-dirs:         test
+    # ghc-options:
+    # - -threaded
+    # - -rtsopts
+    # - -with-rtsopts=-N
+    dependencies:
+    - 6Q
+    - hspec
+    - main-tester
+
+  6Q-doctest:
+    main:                doctests.hs
+    source-dirs:         test
+    # ghc-options:
+    # - -threaded
+    # - -rtsopts
+    # - -with-rtsopts=-N
+    dependencies:
+    - 6Q
+    - doctest

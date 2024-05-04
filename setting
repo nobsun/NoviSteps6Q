@@ -1,0 +1,6 @@
+#!/bin/zsh
+ins-entry $1
+echo "export CURRENT_ATCODER_PROJECT=$1" >! .curenv
+stack build 6Q:exe:$1
+gen-hie >! hie.yaml
+

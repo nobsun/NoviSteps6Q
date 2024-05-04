@@ -1,0 +1,4 @@
+#!/bin/zsh
+source .curenv
+stack exec -- $CURRENT_ATCODER_PROJECT
+

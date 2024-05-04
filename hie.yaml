@@ -1,0 +1,538 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "6Q:lib"
+
+    - path: "./app/124test/Main.hs"
+      component: "6Q:exe:124test"
+
+    - path: "./app/124test/Paths_6Q.hs"
+      component: "6Q:exe:124test"
+
+    - path: "./app/1dpawn/Main.hs"
+      component: "6Q:exe:1dpawn"
+
+    - path: "./app/1dpawn/Paths_6Q.hs"
+      component: "6Q:exe:1dpawn"
+
+    - path: "./app/3smoothnumbers/Main.hs"
+      component: "6Q:exe:3smoothnumbers"
+
+    - path: "./app/3smoothnumbers/Paths_6Q.hs"
+      component: "6Q:exe:3smoothnumbers"
+
+    - path: "./app/484558/Main.hs"
+      component: "6Q:exe:484558"
+
+    - path: "./app/484558/Paths_6Q.hs"
+      component: "6Q:exe:484558"
+
+    - path: "./app/Main.hs"
+      component: "6Q:exe:6Q"
+
+    - path: "./app/Paths_6Q.hs"
+      component: "6Q:exe:6Q"
+
+    - path: "./app/abcdefg/Main.hs"
+      component: "6Q:exe:abcdefg"
+
+    - path: "./app/abcdefg/Paths_6Q.hs"
+      component: "6Q:exe:abcdefg"
+
+    - path: "./app/adjacentsquares/Main.hs"
+      component: "6Q:exe:adjacentsquares"
+
+    - path: "./app/adjacentsquares/Paths_6Q.hs"
+      component: "6Q:exe:adjacentsquares"
+
+    - path: "./app/ancestor/Main.hs"
+      component: "6Q:exe:ancestor"
+
+    - path: "./app/ancestor/Paths_6Q.hs"
+      component: "6Q:exe:ancestor"
+
+    - path: "./app/append/Main.hs"
+      component: "6Q:exe:append"
+
+    - path: "./app/append/Paths_6Q.hs"
+      component: "6Q:exe:append"
+
+    - path: "./app/asciiart/Main.hs"
+      component: "6Q:exe:asciiart"
+
+    - path: "./app/asciiart/Paths_6Q.hs"
+      component: "6Q:exe:asciiart"
+
+    - path: "./app/basek/Main.hs"
+      component: "6Q:exe:basek"
+
+    - path: "./app/basek/Paths_6Q.hs"
+      component: "6Q:exe:basek"
+
+    - path: "./app/batters/Main.hs"
+      component: "6Q:exe:batters"
+
+    - path: "./app/batters/Paths_6Q.hs"
+      component: "6Q:exe:batters"
+
+    - path: "./app/bitwisexor/Main.hs"
+      component: "6Q:exe:bitwisexor"
+
+    - path: "./app/bitwisexor/Paths_6Q.hs"
+      component: "6Q:exe:bitwisexor"
+
+    - path: "./app/boobyprize/Main.hs"
+      component: "6Q:exe:boobyprize"
+
+    - path: "./app/boobyprize/Paths_6Q.hs"
+      component: "6Q:exe:boobyprize"
+
+    - path: "./app/brokenrounding/Main.hs"
+      component: "6Q:exe:brokenrounding"
+
+    - path: "./app/brokenrounding/Paths_6Q.hs"
+      component: "6Q:exe:brokenrounding"
+
+    - path: "./app/caesarcipher/Main.hs"
+      component: "6Q:exe:caesarcipher"
+
+    - path: "./app/caesarcipher/Paths_6Q.hs"
+      component: "6Q:exe:caesarcipher"
+
+    - path: "./app/calltheidnumber/Main.hs"
+      component: "6Q:exe:calltheidnumber"
+
+    - path: "./app/calltheidnumber/Paths_6Q.hs"
+      component: "6Q:exe:calltheidnumber"
+
+    - path: "./app/countdistinctinteger/Main.hs"
+      component: "6Q:exe:countdistinctinteger"
+
+    - path: "./app/countdistinctinteger/Paths_6Q.hs"
+      component: "6Q:exe:countdistinctinteger"
+
+    - path: "./app/defaultprice/Main.hs"
+      component: "6Q:exe:defaultprice"
+
+    - path: "./app/defaultprice/Paths_6Q.hs"
+      component: "6Q:exe:defaultprice"
+
+    - path: "./app/dentistaoki/Main.hs"
+      component: "6Q:exe:dentistaoki"
+
+    - path: "./app/dentistaoki/Paths_6Q.hs"
+      component: "6Q:exe:dentistaoki"
+
+    - path: "./app/distancebetweentokens/Main.hs"
+      component: "6Q:exe:distancebetweentokens"
+
+    - path: "./app/distancebetweentokens/Paths_6Q.hs"
+      component: "6Q:exe:distancebetweentokens"
+
+    - path: "./app/election/Main.hs"
+      component: "6Q:exe:election"
+
+    - path: "./app/election/Paths_6Q.hs"
+      component: "6Q:exe:election"
+
+    - path: "./app/everyoneisfriends/Main.hs"
+      component: "6Q:exe:everyoneisfriends"
+
+    - path: "./app/everyoneisfriends/Paths_6Q.hs"
+      component: "6Q:exe:everyoneisfriends"
+
+    - path: "./app/exponentialorquadratic/Main.hs"
+      component: "6Q:exe:exponentialorquadratic"
+
+    - path: "./app/exponentialorquadratic/Paths_6Q.hs"
+      component: "6Q:exe:exponentialorquadratic"
+
+    - path: "./app/extendedabc/Main.hs"
+      component: "6Q:exe:extendedabc"
+
+    - path: "./app/extendedabc/Paths_6Q.hs"
+      component: "6Q:exe:extendedabc"
+
+    - path: "./app/farthestpoint/Main.hs"
+      component: "6Q:exe:farthestpoint"
+
+    - path: "./app/farthestpoint/Paths_6Q.hs"
+      component: "6Q:exe:farthestpoint"
+
+    - path: "./app/fillthegaps/Main.hs"
+      component: "6Q:exe:fillthegaps"
+
+    - path: "./app/fillthegaps/Paths_6Q.hs"
+      component: "6Q:exe:fillthegaps"
+
+    - path: "./app/fourpoints/Main.hs"
+      component: "6Q:exe:fourpoints"
+
+    - path: "./app/fourpoints/Paths_6Q.hs"
+      component: "6Q:exe:fourpoints"
+
+    - path: "./app/frequency/Main.hs"
+      component: "6Q:exe:frequency"
+
+    - path: "./app/frequency/Paths_6Q.hs"
+      component: "6Q:exe:frequency"
+
+    - path: "./app/fullhouse/Main.hs"
+      component: "6Q:exe:fullhouse"
+
+    - path: "./app/fullhouse/Paths_6Q.hs"
+      component: "6Q:exe:fullhouse"
+
+    - path: "./app/glassandmug/Main.hs"
+      component: "6Q:exe:glassandmug"
+
+    - path: "./app/glassandmug/Paths_6Q.hs"
+      component: "6Q:exe:glassandmug"
+
+    - path: "./app/gostraightandturnright/Main.hs"
+      component: "6Q:exe:gostraightandturnright"
+
+    - path: "./app/gostraightandturnright/Paths_6Q.hs"
+      component: "6Q:exe:gostraightandturnright"
+
+    - path: "./app/growthrecord/Main.hs"
+      component: "6Q:exe:growthrecord"
+
+    - path: "./app/growthrecord/Paths_6Q.hs"
+      component: "6Q:exe:growthrecord"
+
+    - path: "./app/hammer/Main.hs"
+      component: "6Q:exe:hammer"
+
+    - path: "./app/hammer/Paths_6Q.hs"
+      component: "6Q:exe:hammer"
+
+    - path: "./app/hardcalculation/Main.hs"
+      component: "6Q:exe:hardcalculation"
+
+    - path: "./app/hardcalculation/Paths_6Q.hs"
+      component: "6Q:exe:hardcalculation"
+
+    - path: "./app/hitandblow/Main.hs"
+      component: "6Q:exe:hitandblow"
+
+    - path: "./app/hitandblow/Paths_6Q.hs"
+      component: "6Q:exe:hitandblow"
+
+    - path: "./app/howmany/Main.hs"
+      component: "6Q:exe:howmany"
+
+    - path: "./app/howmany/Paths_6Q.hs"
+      component: "6Q:exe:howmany"
+
+    - path: "./app/integerdivision/Main.hs"
+      component: "6Q:exe:integerdivision"
+
+    - path: "./app/integerdivision/Paths_6Q.hs"
+      component: "6Q:exe:integerdivision"
+
+    - path: "./app/integerdivisionreturns/Main.hs"
+      component: "6Q:exe:integerdivisionreturns"
+
+    - path: "./app/integerdivisionreturns/Paths_6Q.hs"
+      component: "6Q:exe:integerdivisionreturns"
+
+    - path: "./app/intersection/Main.hs"
+      component: "6Q:exe:intersection"
+
+    - path: "./app/intersection/Paths_6Q.hs"
+      component: "6Q:exe:intersection"
+
+    - path: "./app/inverseprefixsum/Main.hs"
+      component: "6Q:exe:inverseprefixsum"
+
+    - path: "./app/inverseprefixsum/Paths_6Q.hs"
+      component: "6Q:exe:inverseprefixsum"
+
+    - path: "./app/jogging/Main.hs"
+      component: "6Q:exe:jogging"
+
+    - path: "./app/jogging/Paths_6Q.hs"
+      component: "6Q:exe:jogging"
+
+    - path: "./app/keyencebuilding/Main.hs"
+      component: "6Q:exe:keyencebuilding"
+
+    - path: "./app/keyencebuilding/Paths_6Q.hs"
+      component: "6Q:exe:keyencebuilding"
+
+    - path: "./app/letsgetaperfectscore/Main.hs"
+      component: "6Q:exe:letsgetaperfectscore"
+
+    - path: "./app/letsgetaperfectscore/Paths_6Q.hs"
+      component: "6Q:exe:letsgetaperfectscore"
+
+    - path: "./app/log2n/Main.hs"
+      component: "6Q:exe:log2n"
+
+    - path: "./app/log2n/Paths_6Q.hs"
+      component: "6Q:exe:log2n"
+
+    - path: "./app/longestpalindrome/Main.hs"
+      component: "6Q:exe:longestpalindrome"
+
+    - path: "./app/longestpalindrome/Paths_6Q.hs"
+      component: "6Q:exe:longestpalindrome"
+
+    - path: "./app/maintainmultiplesequences/Main.hs"
+      component: "6Q:exe:maintainmultiplesequences"
+
+    - path: "./app/maintainmultiplesequences/Paths_6Q.hs"
+      component: "6Q:exe:maintainmultiplesequences"
+
+    - path: "./app/matrixtransposition/Main.hs"
+      component: "6Q:exe:matrixtransposition"
+
+    - path: "./app/matrixtransposition/Paths_6Q.hs"
+      component: "6Q:exe:matrixtransposition"
+
+    - path: "./app/measure/Main.hs"
+      component: "6Q:exe:measure"
+
+    - path: "./app/measure/Paths_6Q.hs"
+      component: "6Q:exe:measure"
+
+    - path: "./app/mex/Main.hs"
+      component: "6Q:exe:mex"
+
+    - path: "./app/mex/Paths_6Q.hs"
+      component: "6Q:exe:mex"
+
+    - path: "./app/minimizeordering/Main.hs"
+      component: "6Q:exe:minimizeordering"
+
+    - path: "./app/minimizeordering/Paths_6Q.hs"
+      component: "6Q:exe:minimizeordering"
+
+    - path: "./app/misjudgethetime/Main.hs"
+      component: "6Q:exe:misjudgethetime"
+
+    - path: "./app/misjudgethetime/Paths_6Q.hs"
+      component: "6Q:exe:misjudgethetime"
+
+    - path: "./app/mongeness/Main.hs"
+      component: "6Q:exe:mongeness"
+
+    - path: "./app/mongeness/Paths_6Q.hs"
+      component: "6Q:exe:mongeness"
+
+    - path: "./app/nicegrid/Main.hs"
+      component: "6Q:exe:nicegrid"
+
+    - path: "./app/nicegrid/Paths_6Q.hs"
+      component: "6Q:exe:nicegrid"
+
+    - path: "./app/onandoff/Main.hs"
+      component: "6Q:exe:onandoff"
+
+    - path: "./app/onandoff/Paths_6Q.hs"
+      component: "6Q:exe:onandoff"
+
+    - path: "./app/overlappingsheets/Main.hs"
+      component: "6Q:exe:overlappingsheets"
+
+    - path: "./app/overlappingsheets/Paths_6Q.hs"
+      component: "6Q:exe:overlappingsheets"
+
+    - path: "./app/pasta/Main.hs"
+      component: "6Q:exe:pasta"
+
+    - path: "./app/pasta/Paths_6Q.hs"
+      component: "6Q:exe:pasta"
+
+    - path: "./app/pentagon/Main.hs"
+      component: "6Q:exe:pentagon"
+
+    - path: "./app/pentagon/Paths_6Q.hs"
+      component: "6Q:exe:pentagon"
+
+    - path: "./app/perfectstring/Main.hs"
+      component: "6Q:exe:perfectstring"
+
+    - path: "./app/perfectstring/Paths_6Q.hs"
+      component: "6Q:exe:perfectstring"
+
+    - path: "./app/playingcardsvalidation/Main.hs"
+      component: "6Q:exe:playingcardsvalidation"
+
+    - path: "./app/playingcardsvalidation/Paths_6Q.hs"
+      component: "6Q:exe:playingcardsvalidation"
+
+    - path: "./app/postalcard/Main.hs"
+      component: "6Q:exe:postalcard"
+
+    - path: "./app/postalcard/Paths_6Q.hs"
+      component: "6Q:exe:postalcard"
+
+    - path: "./app/practicalcomputing/Main.hs"
+      component: "6Q:exe:practicalcomputing"
+
+    - path: "./app/practicalcomputing/Paths_6Q.hs"
+      component: "6Q:exe:practicalcomputing"
+
+    - path: "./app/prefixandsuffix/Main.hs"
+      component: "6Q:exe:prefixandsuffix"
+
+    - path: "./app/prefixandsuffix/Paths_6Q.hs"
+      component: "6Q:exe:prefixandsuffix"
+
+    - path: "./app/qualificationcontest/Main.hs"
+      component: "6Q:exe:qualificationcontest"
+
+    - path: "./app/qualificationcontest/Paths_6Q.hs"
+      component: "6Q:exe:qualificationcontest"
+
+    - path: "./app/racecar/Main.hs"
+      component: "6Q:exe:racecar"
+
+    - path: "./app/racecar/Paths_6Q.hs"
+      component: "6Q:exe:racecar"
+
+    - path: "./app/rangeswap/Main.hs"
+      component: "6Q:exe:rangeswap"
+
+    - path: "./app/rangeswap/Paths_6Q.hs"
+      component: "6Q:exe:rangeswap"
+
+    - path: "./app/rectangledetection/Main.hs"
+      component: "6Q:exe:rectangledetection"
+
+    - path: "./app/rectangledetection/Paths_6Q.hs"
+      component: "6Q:exe:rectangledetection"
+
+    - path: "./app/roundrobintournament/Main.hs"
+      component: "6Q:exe:roundrobintournament"
+
+    - path: "./app/roundrobintournament/Paths_6Q.hs"
+      component: "6Q:exe:roundrobintournament"
+
+    - path: "./app/samename/Main.hs"
+      component: "6Q:exe:samename"
+
+    - path: "./app/samename/Paths_6Q.hs"
+      component: "6Q:exe:samename"
+
+    - path: "./app/sandwichnumber/Main.hs"
+      component: "6Q:exe:sandwichnumber"
+
+    - path: "./app/sandwichnumber/Paths_6Q.hs"
+      component: "6Q:exe:sandwichnumber"
+
+    - path: "./app/savings/Main.hs"
+      component: "6Q:exe:savings"
+
+    - path: "./app/savings/Paths_6Q.hs"
+      component: "6Q:exe:savings"
+
+    - path: "./app/selfpower/Main.hs"
+      component: "6Q:exe:selfpower"
+
+    - path: "./app/selfpower/Paths_6Q.hs"
+      component: "6Q:exe:selfpower"
+
+    - path: "./app/starornot/Main.hs"
+      component: "6Q:exe:starornot"
+
+    - path: "./app/starornot/Paths_6Q.hs"
+      component: "6Q:exe:starornot"
+
+    - path: "./app/stringshifting/Main.hs"
+      component: "6Q:exe:stringshifting"
+
+    - path: "./app/stringshifting/Paths_6Q.hs"
+      component: "6Q:exe:stringshifting"
+
+    - path: "./app/takahashisfailure/Main.hs"
+      component: "6Q:exe:takahashisfailure"
+
+    - path: "./app/takahashisfailure/Paths_6Q.hs"
+      component: "6Q:exe:takahashisfailure"
+
+    - path: "./app/takahashissecret/Main.hs"
+      component: "6Q:exe:takahashissecret"
+
+    - path: "./app/takahashissecret/Paths_6Q.hs"
+      component: "6Q:exe:takahashissecret"
+
+    - path: "./app/tetrahedralnumber/Main.hs"
+      component: "6Q:exe:tetrahedralnumber"
+
+    - path: "./app/tetrahedralnumber/Paths_6Q.hs"
+      component: "6Q:exe:tetrahedralnumber"
+
+    - path: "./app/themiddleday/Main.hs"
+      component: "6Q:exe:themiddleday"
+
+    - path: "./app/themiddleday/Paths_6Q.hs"
+      component: "6Q:exe:themiddleday"
+
+    - path: "./app/tobesaikyo/Main.hs"
+      component: "6Q:exe:tobesaikyo"
+
+    - path: "./app/tobesaikyo/Paths_6Q.hs"
+      component: "6Q:exe:tobesaikyo"
+
+    - path: "./app/tournamentresult/Main.hs"
+      component: "6Q:exe:tournamentresult"
+
+    - path: "./app/tournamentresult/Paths_6Q.hs"
+      component: "6Q:exe:tournamentresult"
+
+    - path: "./app/triplemetre/Main.hs"
+      component: "6Q:exe:triplemetre"
+
+    - path: "./app/triplemetre/Paths_6Q.hs"
+      component: "6Q:exe:triplemetre"
+
+    - path: "./app/tshirt/Main.hs"
+      component: "6Q:exe:tshirt"
+
+    - path: "./app/tshirt/Paths_6Q.hs"
+      component: "6Q:exe:tshirt"
+
+    - path: "./app/typo/Main.hs"
+      component: "6Q:exe:typo"
+
+    - path: "./app/typo/Paths_6Q.hs"
+      component: "6Q:exe:typo"
+
+    - path: "./app/vacationtogether/Main.hs"
+      component: "6Q:exe:vacationtogether"
+
+    - path: "./app/vacationtogether/Paths_6Q.hs"
+      component: "6Q:exe:vacationtogether"
+
+    - path: "./app/whichisahead/Main.hs"
+      component: "6Q:exe:whichisahead"
+
+    - path: "./app/whichisahead/Paths_6Q.hs"
+      component: "6Q:exe:whichisahead"
+
+    - path: "./app/whoismissing/Main.hs"
+      component: "6Q:exe:whoismissing"
+
+    - path: "./app/whoismissing/Paths_6Q.hs"
+      component: "6Q:exe:whoismissing"
+
+    - path: "./app/yellowandredcard/Main.hs"
+      component: "6Q:exe:yellowandredcard"
+
+    - path: "./app/yellowandredcard/Paths_6Q.hs"
+      component: "6Q:exe:yellowandredcard"
+
+    - path: "./app/zorome/Main.hs"
+      component: "6Q:exe:zorome"
+
+    - path: "./app/zorome/Paths_6Q.hs"
+      component: "6Q:exe:zorome"
+
+    - path: "./test"
+      component: "6Q:test:6Q-doctest"
+
+    - path: "./test"
+      component: "6Q:test:6Q-test"
