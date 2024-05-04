@@ -33,16 +33,17 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = [I] -> [O]
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    as@[_] -> as
+    as     -> solve (zipWith ((abs .) . subtract) as (tail as))
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:as:_ -> case f as of
+        r -> [r]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

@@ -63,6 +63,94 @@ library:
   source-dirs: src
 
 executables:
+  binaryrepresentation1:
+    main:            Main.hs
+    source-dirs:     app/binaryrepresentation1
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  threeleggedrace:
+    main:            Main.hs
+    source-dirs:     app/threeleggedrace
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  repetition:
+    main:            Main.hs
+    source-dirs:     app/repetition
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  sequenceofabsolutedifferences:
+    main:            Main.hs
+    source-dirs:     app/sequenceofabsolutedifferences
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  ex24:
+    main:            Main.hs
+    source-dirs:     app/ex24
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  ex23:
+    main:            Main.hs
+    source-dirs:     app/ex23
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  ex22:
+    main:            Main.hs
+    source-dirs:     app/ex22
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  ex18:
+    main:            Main.hs
+    source-dirs:     app/ex18
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  200thabc:
+    main:            Main.hs
+    source-dirs:     app/200thabc
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  2ndhighestmountain:
+    main:            Main.hs
+    source-dirs:     app/2ndhighestmountain
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
+  atcodercondominium:
+    main:            Main.hs
+    source-dirs:     app/atcodercondominium
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
   savings:
     main:            Main.hs
     source-dirs:     app/savings

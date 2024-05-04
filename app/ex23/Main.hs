@@ -33,16 +33,16 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = [I] -> (O,O)
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    as -> maximumBy (comparing snd) $ runLength $ sort as
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:as:_ -> case f as of
+        (v,c) -> [[v,c]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

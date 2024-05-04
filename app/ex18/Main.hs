@@ -31,18 +31,24 @@ debug :: Bool
 debug = () /= ()
 
 type I = Int
-type O = Int
+type O = String
 
-type Solver = () -> ()
+type Solver = (I,[[I]]) -> [[O]]
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (n,wls) -> splitEvery n 
+             $ elems 
+             $ accumArray (const id) "-" ((1,1),(n,n)) (phi =<< wls)
+    where
+        phi :: [Int] -> [((Int,Int),String)]
+        phi = \ case
+            [i,j] -> [((i,j),"o"), ((j,i),"x")]
+            _     -> invalid
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [n,_]:wls -> f (n,wls)
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

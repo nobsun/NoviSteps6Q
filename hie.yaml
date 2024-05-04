@@ -15,6 +15,18 @@ cradle:
     - path: "./app/1dpawn/Paths_6Q.hs"
       component: "6Q:exe:1dpawn"
 
+    - path: "./app/200thabc/Main.hs"
+      component: "6Q:exe:200thabc"
+
+    - path: "./app/200thabc/Paths_6Q.hs"
+      component: "6Q:exe:200thabc"
+
+    - path: "./app/2ndhighestmountain/Main.hs"
+      component: "6Q:exe:2ndhighestmountain"
+
+    - path: "./app/2ndhighestmountain/Paths_6Q.hs"
+      component: "6Q:exe:2ndhighestmountain"
+
     - path: "./app/3smoothnumbers/Main.hs"
       component: "6Q:exe:3smoothnumbers"
 
@@ -63,6 +75,12 @@ cradle:
     - path: "./app/asciiart/Paths_6Q.hs"
       component: "6Q:exe:asciiart"
 
+    - path: "./app/atcodercondominium/Main.hs"
+      component: "6Q:exe:atcodercondominium"
+
+    - path: "./app/atcodercondominium/Paths_6Q.hs"
+      component: "6Q:exe:atcodercondominium"
+
     - path: "./app/basek/Main.hs"
       component: "6Q:exe:basek"
 
@@ -74,6 +92,12 @@ cradle:
 
     - path: "./app/batters/Paths_6Q.hs"
       component: "6Q:exe:batters"
+
+    - path: "./app/binaryrepresentation1/Main.hs"
+      component: "6Q:exe:binaryrepresentation1"
+
+    - path: "./app/binaryrepresentation1/Paths_6Q.hs"
+      component: "6Q:exe:binaryrepresentation1"
 
     - path: "./app/bitwisexor/Main.hs"
       component: "6Q:exe:bitwisexor"
@@ -140,6 +164,30 @@ cradle:
 
     - path: "./app/everyoneisfriends/Paths_6Q.hs"
       component: "6Q:exe:everyoneisfriends"
+
+    - path: "./app/ex18/Main.hs"
+      component: "6Q:exe:ex18"
+
+    - path: "./app/ex18/Paths_6Q.hs"
+      component: "6Q:exe:ex18"
+
+    - path: "./app/ex22/Main.hs"
+      component: "6Q:exe:ex22"
+
+    - path: "./app/ex22/Paths_6Q.hs"
+      component: "6Q:exe:ex22"
+
+    - path: "./app/ex23/Main.hs"
+      component: "6Q:exe:ex23"
+
+    - path: "./app/ex23/Paths_6Q.hs"
+      component: "6Q:exe:ex23"
+
+    - path: "./app/ex24/Main.hs"
+      component: "6Q:exe:ex24"
+
+    - path: "./app/ex24/Paths_6Q.hs"
+      component: "6Q:exe:ex24"
 
     - path: "./app/exponentialorquadratic/Main.hs"
       component: "6Q:exe:exponentialorquadratic"
@@ -405,6 +453,12 @@ cradle:
     - path: "./app/rectangledetection/Paths_6Q.hs"
       component: "6Q:exe:rectangledetection"
 
+    - path: "./app/repetition/Main.hs"
+      component: "6Q:exe:repetition"
+
+    - path: "./app/repetition/Paths_6Q.hs"
+      component: "6Q:exe:repetition"
+
     - path: "./app/roundrobintournament/Main.hs"
       component: "6Q:exe:roundrobintournament"
 
@@ -434,6 +488,12 @@ cradle:
 
     - path: "./app/selfpower/Paths_6Q.hs"
       component: "6Q:exe:selfpower"
+
+    - path: "./app/sequenceofabsolutedifferences/Main.hs"
+      component: "6Q:exe:sequenceofabsolutedifferences"
+
+    - path: "./app/sequenceofabsolutedifferences/Paths_6Q.hs"
+      component: "6Q:exe:sequenceofabsolutedifferences"
 
     - path: "./app/starornot/Main.hs"
       component: "6Q:exe:starornot"
@@ -470,6 +530,12 @@ cradle:
 
     - path: "./app/themiddleday/Paths_6Q.hs"
       component: "6Q:exe:themiddleday"
+
+    - path: "./app/threeleggedrace/Main.hs"
+      component: "6Q:exe:threeleggedrace"
+
+    - path: "./app/threeleggedrace/Paths_6Q.hs"
+      component: "6Q:exe:threeleggedrace"
 
     - path: "./app/tobesaikyo/Main.hs"
       component: "6Q:exe:tobesaikyo"

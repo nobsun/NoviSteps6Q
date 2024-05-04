@@ -24,6 +24,7 @@ import Data.List
 import Data.Map qualified as M
 import Data.Set qualified as S
 import Data.Vector qualified as V
+import Text.Printf
 
 import Debug.Trace qualified as Debug
 
@@ -31,18 +32,23 @@ debug :: Bool
 debug = () /= ()
 
 type I = Int
-type O = Int
+type O = String
 
-type Solver = () -> ()
+type Solver = (I,I,I,I) -> [O]
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (h,m,s,d) -> [p,q] where
+        p = printf "%02d:%02d:%02d" h m s
+        q = case (60*(60*h+m)+s + d) `mod` 86400 of
+            q' -> case divMod q' 60 of
+                (q'',ss) -> case divMod q'' 60 of
+                    (hh,mm)  -> printf "%02d:%02d:%02d" hh mm ss
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [h,m,s]:[d]:_ -> case f (h,m,s,d) of
+        r -> (:[]) <$> r
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

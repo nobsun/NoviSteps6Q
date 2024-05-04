@@ -24,6 +24,7 @@ import Data.List
 import Data.Map qualified as M
 import Data.Set qualified as S
 import Data.Vector qualified as V
+import Text.Printf
 
 import Debug.Trace qualified as Debug
 
@@ -31,18 +32,18 @@ debug :: Bool
 debug = () /= ()
 
 type I = Int
-type O = Int
+type O = String
 
-type Solver = () -> ()
+type Solver = I -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    n -> printf "%010b" n
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [n]:_ -> case f n of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

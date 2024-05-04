@@ -33,16 +33,15 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = [[I]] -> [[O]]
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    ps -> sortBy (comparing (!! 1)) ps
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:ps -> f ps
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

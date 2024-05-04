@@ -33,16 +33,16 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = (I,I) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (n,k) -> sum [ 100 * i + j | i <- [1 .. n], j <- [1 .. k] ]
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [n,k]:_ -> case f (n,k) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
@@ -132,16 +132,6 @@ runLength = unfoldr phi
     phi []     = Nothing
     phi (x:xs) = case spanCount (x ==) xs of
       (m, zs) -> Just ((x, succ m) , zs)
-
-{- |
->>> splitEvery 3 [0 .. 10]
-[[0,1,2],[3,4,5],[6,7,8],[9,10]]
--}
-splitEvery :: Int -> [a] -> [[a]]
-splitEvery k = \ case
-    [] -> []
-    xs -> case splitAt k xs of
-        (ys,zs) -> ys : splitEvery k zs
 
 {- |
 >>> mex [8,23,9,0,12,11,1,10,13,7,41,4,14,21,5,17,3,19,2,6]

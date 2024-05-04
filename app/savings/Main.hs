@@ -33,16 +33,19 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = I -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    n -> iter 1 1 where
+        iter c a
+            | n <= a    = c
+            | otherwise = iter (succ c) (a + succ c)
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [n]:_ -> case f n of
+        rr -> [[rr]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
