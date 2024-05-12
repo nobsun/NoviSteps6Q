@@ -75,6 +75,12 @@ cradle:
     - path: "./app/asciiart/Paths_6Q.hs"
       component: "6Q:exe:asciiart"
 
+    - path: "./app/atcoderamusementpark/Main.hs"
+      component: "6Q:exe:atcoderamusementpark"
+
+    - path: "./app/atcoderamusementpark/Paths_6Q.hs"
+      component: "6Q:exe:atcoderamusementpark"
+
     - path: "./app/atcodercondominium/Main.hs"
       component: "6Q:exe:atcodercondominium"
 

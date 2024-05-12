@@ -63,6 +63,14 @@ library:
   source-dirs: src
 
 executables:
+  atcoderamusementpark:
+    main:            Main.hs
+    source-dirs:     app/atcoderamusementpark
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - 6Q
+
   binaryrepresentation1:
     main:            Main.hs
     source-dirs:     app/binaryrepresentation1
