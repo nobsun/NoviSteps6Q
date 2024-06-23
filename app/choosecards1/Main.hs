@@ -33,16 +33,27 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = [I] -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    as -> foldl' psi 0 $ fromTriple $ foldl' phi (0,0,0) as
+        where
+            phi (!p,!q,!r) = \ case
+                1 -> (succ p, q, r)
+                2 -> (p, succ q, r)
+                3 -> (p, q, succ r)
+                _ -> invalid
+            psi s n = s + n * pred n `div` 2
+
+fromTriple :: (a,a,a) -> [a]
+fromTriple (a,b,c) = [a,b,c]
+
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:as:_ -> case f as of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

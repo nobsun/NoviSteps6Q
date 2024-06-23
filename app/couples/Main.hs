@@ -33,16 +33,22 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = [I] -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    as -> iter 0 as (drop 2 as)
+        where
+            iter c _ [] = c
+            iter c (x:xs) (y:ys)
+                | x == y    = iter (succ c) xs ys
+                | otherwise = iter c xs ys
+            iter _ _ _ = invalid
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:as:_ -> case f as of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
@@ -158,21 +164,6 @@ minform a (n,xs)
     where  (us,vs)  =  partition (< b) xs
            b        =  a + 1 + n `div` 2
            m        = length us
-{- misc -}
-
-toTuple :: [a] -> (a,a)
-toTuple = \ case
-    x:y:_ -> (x,y)
-    _     -> invalid
-
-fromTuple :: (a,a) -> [a]
-fromTuple (x,y) = [x,y]
-
-countif :: (a -> Bool) -> [a] -> Int
-countif = iter 0
-    where
-        iter a p (x:xs) = iter (bool a (succ a) (p x)) p xs
-        iter a _ []     = a
 
 invalid :: a
 invalid = error "invalid input"

@@ -135,11 +135,23 @@ cradle:
     - path: "./app/calltheidnumber/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:calltheidnumber"
 
+    - path: "./app/choosecards1/Main.hs"
+      component: "NoviSteps6Q:exe:choosecards1"
+
+    - path: "./app/choosecards1/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:choosecards1"
+
     - path: "./app/countdistinctinteger/Main.hs"
       component: "NoviSteps6Q:exe:countdistinctinteger"
 
     - path: "./app/countdistinctinteger/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:countdistinctinteger"
+
+    - path: "./app/couples/Main.hs"
+      component: "NoviSteps6Q:exe:couples"
+
+    - path: "./app/couples/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:couples"
 
     - path: "./app/defaultprice/Main.hs"
       component: "NoviSteps6Q:exe:defaultprice"
@@ -374,6 +386,12 @@ cradle:
 
     - path: "./app/mongeness/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:mongeness"
+
+    - path: "./app/nearestpoints/Main.hs"
+      component: "NoviSteps6Q:exe:nearestpoints"
+
+    - path: "./app/nearestpoints/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:nearestpoints"
 
     - path: "./app/nicegrid/Main.hs"
       component: "NoviSteps6Q:exe:nicegrid"

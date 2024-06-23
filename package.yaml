@@ -63,6 +63,30 @@ library:
   source-dirs: src
 
 executables:
+  nearestpoints:
+    main:               Main.hs
+    source-dirs:        app/nearestpoints
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  choosecards1:
+    main:               Main.hs
+    source-dirs:        app/choosecards1
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  couples:
+    main:               Main.hs
+    source-dirs:        app/couples
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   ticketcounter:
     main:               Main.hs
     source-dirs:        app/ticketcounter

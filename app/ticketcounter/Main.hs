@@ -33,16 +33,18 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = (I,[I]) -> [O]
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (a,ts) -> tail $ scanl phi 0 ts
+        where
+            phi e t = max e t + a 
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [_,a]:ts:_ -> case f (a,ts) of
+        r -> (:[]) <$> r
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
