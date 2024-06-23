@@ -1,610 +1,616 @@
 cradle:
   stack:
     - path: "./src"
-      component: "6Q:lib"
+      component: "NoviSteps6Q:lib"
 
     - path: "./app/124test/Main.hs"
-      component: "6Q:exe:124test"
+      component: "NoviSteps6Q:exe:124test"
 
-    - path: "./app/124test/Paths_6Q.hs"
-      component: "6Q:exe:124test"
+    - path: "./app/124test/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:124test"
 
     - path: "./app/1dpawn/Main.hs"
-      component: "6Q:exe:1dpawn"
+      component: "NoviSteps6Q:exe:1dpawn"
 
-    - path: "./app/1dpawn/Paths_6Q.hs"
-      component: "6Q:exe:1dpawn"
+    - path: "./app/1dpawn/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:1dpawn"
 
     - path: "./app/200thabc/Main.hs"
-      component: "6Q:exe:200thabc"
+      component: "NoviSteps6Q:exe:200thabc"
 
-    - path: "./app/200thabc/Paths_6Q.hs"
-      component: "6Q:exe:200thabc"
+    - path: "./app/200thabc/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:200thabc"
 
     - path: "./app/2ndhighestmountain/Main.hs"
-      component: "6Q:exe:2ndhighestmountain"
+      component: "NoviSteps6Q:exe:2ndhighestmountain"
 
-    - path: "./app/2ndhighestmountain/Paths_6Q.hs"
-      component: "6Q:exe:2ndhighestmountain"
+    - path: "./app/2ndhighestmountain/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:2ndhighestmountain"
 
     - path: "./app/3smoothnumbers/Main.hs"
-      component: "6Q:exe:3smoothnumbers"
+      component: "NoviSteps6Q:exe:3smoothnumbers"
 
-    - path: "./app/3smoothnumbers/Paths_6Q.hs"
-      component: "6Q:exe:3smoothnumbers"
+    - path: "./app/3smoothnumbers/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:3smoothnumbers"
 
     - path: "./app/484558/Main.hs"
-      component: "6Q:exe:484558"
+      component: "NoviSteps6Q:exe:484558"
 
-    - path: "./app/484558/Paths_6Q.hs"
-      component: "6Q:exe:484558"
+    - path: "./app/484558/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:484558"
 
     - path: "./app/Main.hs"
-      component: "6Q:exe:6Q"
+      component: "NoviSteps6Q:exe:NoviSteps6Q"
 
-    - path: "./app/Paths_6Q.hs"
-      component: "6Q:exe:6Q"
+    - path: "./app/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:NoviSteps6Q"
 
     - path: "./app/abcdefg/Main.hs"
-      component: "6Q:exe:abcdefg"
+      component: "NoviSteps6Q:exe:abcdefg"
 
-    - path: "./app/abcdefg/Paths_6Q.hs"
-      component: "6Q:exe:abcdefg"
+    - path: "./app/abcdefg/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abcdefg"
 
     - path: "./app/adjacentsquares/Main.hs"
-      component: "6Q:exe:adjacentsquares"
+      component: "NoviSteps6Q:exe:adjacentsquares"
 
-    - path: "./app/adjacentsquares/Paths_6Q.hs"
-      component: "6Q:exe:adjacentsquares"
+    - path: "./app/adjacentsquares/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:adjacentsquares"
 
     - path: "./app/ancestor/Main.hs"
-      component: "6Q:exe:ancestor"
+      component: "NoviSteps6Q:exe:ancestor"
 
-    - path: "./app/ancestor/Paths_6Q.hs"
-      component: "6Q:exe:ancestor"
+    - path: "./app/ancestor/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:ancestor"
 
     - path: "./app/append/Main.hs"
-      component: "6Q:exe:append"
+      component: "NoviSteps6Q:exe:append"
 
-    - path: "./app/append/Paths_6Q.hs"
-      component: "6Q:exe:append"
+    - path: "./app/append/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:append"
 
     - path: "./app/asciiart/Main.hs"
-      component: "6Q:exe:asciiart"
+      component: "NoviSteps6Q:exe:asciiart"
 
-    - path: "./app/asciiart/Paths_6Q.hs"
-      component: "6Q:exe:asciiart"
+    - path: "./app/asciiart/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:asciiart"
 
     - path: "./app/atcoderamusementpark/Main.hs"
-      component: "6Q:exe:atcoderamusementpark"
+      component: "NoviSteps6Q:exe:atcoderamusementpark"
 
-    - path: "./app/atcoderamusementpark/Paths_6Q.hs"
-      component: "6Q:exe:atcoderamusementpark"
+    - path: "./app/atcoderamusementpark/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:atcoderamusementpark"
 
     - path: "./app/atcodercondominium/Main.hs"
-      component: "6Q:exe:atcodercondominium"
+      component: "NoviSteps6Q:exe:atcodercondominium"
 
-    - path: "./app/atcodercondominium/Paths_6Q.hs"
-      component: "6Q:exe:atcodercondominium"
+    - path: "./app/atcodercondominium/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:atcodercondominium"
 
     - path: "./app/basek/Main.hs"
-      component: "6Q:exe:basek"
+      component: "NoviSteps6Q:exe:basek"
 
-    - path: "./app/basek/Paths_6Q.hs"
-      component: "6Q:exe:basek"
+    - path: "./app/basek/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:basek"
 
     - path: "./app/batters/Main.hs"
-      component: "6Q:exe:batters"
+      component: "NoviSteps6Q:exe:batters"
 
-    - path: "./app/batters/Paths_6Q.hs"
-      component: "6Q:exe:batters"
+    - path: "./app/batters/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:batters"
 
     - path: "./app/binaryrepresentation1/Main.hs"
-      component: "6Q:exe:binaryrepresentation1"
+      component: "NoviSteps6Q:exe:binaryrepresentation1"
 
-    - path: "./app/binaryrepresentation1/Paths_6Q.hs"
-      component: "6Q:exe:binaryrepresentation1"
+    - path: "./app/binaryrepresentation1/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:binaryrepresentation1"
 
     - path: "./app/bitwisexor/Main.hs"
-      component: "6Q:exe:bitwisexor"
+      component: "NoviSteps6Q:exe:bitwisexor"
 
-    - path: "./app/bitwisexor/Paths_6Q.hs"
-      component: "6Q:exe:bitwisexor"
+    - path: "./app/bitwisexor/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:bitwisexor"
 
     - path: "./app/boobyprize/Main.hs"
-      component: "6Q:exe:boobyprize"
+      component: "NoviSteps6Q:exe:boobyprize"
 
-    - path: "./app/boobyprize/Paths_6Q.hs"
-      component: "6Q:exe:boobyprize"
+    - path: "./app/boobyprize/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:boobyprize"
 
     - path: "./app/brokenrounding/Main.hs"
-      component: "6Q:exe:brokenrounding"
+      component: "NoviSteps6Q:exe:brokenrounding"
 
-    - path: "./app/brokenrounding/Paths_6Q.hs"
-      component: "6Q:exe:brokenrounding"
+    - path: "./app/brokenrounding/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:brokenrounding"
 
     - path: "./app/caesarcipher/Main.hs"
-      component: "6Q:exe:caesarcipher"
+      component: "NoviSteps6Q:exe:caesarcipher"
 
-    - path: "./app/caesarcipher/Paths_6Q.hs"
-      component: "6Q:exe:caesarcipher"
+    - path: "./app/caesarcipher/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:caesarcipher"
 
     - path: "./app/calltheidnumber/Main.hs"
-      component: "6Q:exe:calltheidnumber"
+      component: "NoviSteps6Q:exe:calltheidnumber"
 
-    - path: "./app/calltheidnumber/Paths_6Q.hs"
-      component: "6Q:exe:calltheidnumber"
+    - path: "./app/calltheidnumber/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:calltheidnumber"
 
     - path: "./app/countdistinctinteger/Main.hs"
-      component: "6Q:exe:countdistinctinteger"
+      component: "NoviSteps6Q:exe:countdistinctinteger"
 
-    - path: "./app/countdistinctinteger/Paths_6Q.hs"
-      component: "6Q:exe:countdistinctinteger"
+    - path: "./app/countdistinctinteger/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:countdistinctinteger"
 
     - path: "./app/defaultprice/Main.hs"
-      component: "6Q:exe:defaultprice"
+      component: "NoviSteps6Q:exe:defaultprice"
 
-    - path: "./app/defaultprice/Paths_6Q.hs"
-      component: "6Q:exe:defaultprice"
+    - path: "./app/defaultprice/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:defaultprice"
 
     - path: "./app/dentistaoki/Main.hs"
-      component: "6Q:exe:dentistaoki"
+      component: "NoviSteps6Q:exe:dentistaoki"
 
-    - path: "./app/dentistaoki/Paths_6Q.hs"
-      component: "6Q:exe:dentistaoki"
+    - path: "./app/dentistaoki/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:dentistaoki"
 
     - path: "./app/distancebetweentokens/Main.hs"
-      component: "6Q:exe:distancebetweentokens"
+      component: "NoviSteps6Q:exe:distancebetweentokens"
 
-    - path: "./app/distancebetweentokens/Paths_6Q.hs"
-      component: "6Q:exe:distancebetweentokens"
+    - path: "./app/distancebetweentokens/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:distancebetweentokens"
 
     - path: "./app/election/Main.hs"
-      component: "6Q:exe:election"
+      component: "NoviSteps6Q:exe:election"
 
-    - path: "./app/election/Paths_6Q.hs"
-      component: "6Q:exe:election"
+    - path: "./app/election/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:election"
 
     - path: "./app/everyoneisfriends/Main.hs"
-      component: "6Q:exe:everyoneisfriends"
+      component: "NoviSteps6Q:exe:everyoneisfriends"
 
-    - path: "./app/everyoneisfriends/Paths_6Q.hs"
-      component: "6Q:exe:everyoneisfriends"
+    - path: "./app/everyoneisfriends/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:everyoneisfriends"
 
     - path: "./app/ex18/Main.hs"
-      component: "6Q:exe:ex18"
+      component: "NoviSteps6Q:exe:ex18"
 
-    - path: "./app/ex18/Paths_6Q.hs"
-      component: "6Q:exe:ex18"
+    - path: "./app/ex18/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:ex18"
 
     - path: "./app/ex22/Main.hs"
-      component: "6Q:exe:ex22"
+      component: "NoviSteps6Q:exe:ex22"
 
-    - path: "./app/ex22/Paths_6Q.hs"
-      component: "6Q:exe:ex22"
+    - path: "./app/ex22/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:ex22"
 
     - path: "./app/ex23/Main.hs"
-      component: "6Q:exe:ex23"
+      component: "NoviSteps6Q:exe:ex23"
 
-    - path: "./app/ex23/Paths_6Q.hs"
-      component: "6Q:exe:ex23"
+    - path: "./app/ex23/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:ex23"
 
     - path: "./app/ex24/Main.hs"
-      component: "6Q:exe:ex24"
+      component: "NoviSteps6Q:exe:ex24"
 
-    - path: "./app/ex24/Paths_6Q.hs"
-      component: "6Q:exe:ex24"
+    - path: "./app/ex24/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:ex24"
 
     - path: "./app/exponentialorquadratic/Main.hs"
-      component: "6Q:exe:exponentialorquadratic"
+      component: "NoviSteps6Q:exe:exponentialorquadratic"
 
-    - path: "./app/exponentialorquadratic/Paths_6Q.hs"
-      component: "6Q:exe:exponentialorquadratic"
+    - path: "./app/exponentialorquadratic/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:exponentialorquadratic"
 
     - path: "./app/extendedabc/Main.hs"
-      component: "6Q:exe:extendedabc"
+      component: "NoviSteps6Q:exe:extendedabc"
 
-    - path: "./app/extendedabc/Paths_6Q.hs"
-      component: "6Q:exe:extendedabc"
+    - path: "./app/extendedabc/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:extendedabc"
 
     - path: "./app/farthestpoint/Main.hs"
-      component: "6Q:exe:farthestpoint"
+      component: "NoviSteps6Q:exe:farthestpoint"
 
-    - path: "./app/farthestpoint/Paths_6Q.hs"
-      component: "6Q:exe:farthestpoint"
+    - path: "./app/farthestpoint/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:farthestpoint"
 
     - path: "./app/fillthegaps/Main.hs"
-      component: "6Q:exe:fillthegaps"
+      component: "NoviSteps6Q:exe:fillthegaps"
 
-    - path: "./app/fillthegaps/Paths_6Q.hs"
-      component: "6Q:exe:fillthegaps"
+    - path: "./app/fillthegaps/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:fillthegaps"
 
     - path: "./app/fourpoints/Main.hs"
-      component: "6Q:exe:fourpoints"
+      component: "NoviSteps6Q:exe:fourpoints"
 
-    - path: "./app/fourpoints/Paths_6Q.hs"
-      component: "6Q:exe:fourpoints"
+    - path: "./app/fourpoints/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:fourpoints"
 
     - path: "./app/frequency/Main.hs"
-      component: "6Q:exe:frequency"
+      component: "NoviSteps6Q:exe:frequency"
 
-    - path: "./app/frequency/Paths_6Q.hs"
-      component: "6Q:exe:frequency"
+    - path: "./app/frequency/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:frequency"
 
     - path: "./app/fullhouse/Main.hs"
-      component: "6Q:exe:fullhouse"
+      component: "NoviSteps6Q:exe:fullhouse"
 
-    - path: "./app/fullhouse/Paths_6Q.hs"
-      component: "6Q:exe:fullhouse"
+    - path: "./app/fullhouse/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:fullhouse"
 
     - path: "./app/glassandmug/Main.hs"
-      component: "6Q:exe:glassandmug"
+      component: "NoviSteps6Q:exe:glassandmug"
 
-    - path: "./app/glassandmug/Paths_6Q.hs"
-      component: "6Q:exe:glassandmug"
+    - path: "./app/glassandmug/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:glassandmug"
 
     - path: "./app/gostraightandturnright/Main.hs"
-      component: "6Q:exe:gostraightandturnright"
+      component: "NoviSteps6Q:exe:gostraightandturnright"
 
-    - path: "./app/gostraightandturnright/Paths_6Q.hs"
-      component: "6Q:exe:gostraightandturnright"
+    - path: "./app/gostraightandturnright/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:gostraightandturnright"
 
     - path: "./app/growthrecord/Main.hs"
-      component: "6Q:exe:growthrecord"
+      component: "NoviSteps6Q:exe:growthrecord"
 
-    - path: "./app/growthrecord/Paths_6Q.hs"
-      component: "6Q:exe:growthrecord"
+    - path: "./app/growthrecord/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:growthrecord"
 
     - path: "./app/hammer/Main.hs"
-      component: "6Q:exe:hammer"
+      component: "NoviSteps6Q:exe:hammer"
 
-    - path: "./app/hammer/Paths_6Q.hs"
-      component: "6Q:exe:hammer"
+    - path: "./app/hammer/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:hammer"
 
     - path: "./app/hardcalculation/Main.hs"
-      component: "6Q:exe:hardcalculation"
+      component: "NoviSteps6Q:exe:hardcalculation"
 
-    - path: "./app/hardcalculation/Paths_6Q.hs"
-      component: "6Q:exe:hardcalculation"
+    - path: "./app/hardcalculation/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:hardcalculation"
 
     - path: "./app/hitandblow/Main.hs"
-      component: "6Q:exe:hitandblow"
+      component: "NoviSteps6Q:exe:hitandblow"
 
-    - path: "./app/hitandblow/Paths_6Q.hs"
-      component: "6Q:exe:hitandblow"
+    - path: "./app/hitandblow/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:hitandblow"
 
     - path: "./app/howmany/Main.hs"
-      component: "6Q:exe:howmany"
+      component: "NoviSteps6Q:exe:howmany"
 
-    - path: "./app/howmany/Paths_6Q.hs"
-      component: "6Q:exe:howmany"
+    - path: "./app/howmany/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:howmany"
 
     - path: "./app/integerdivision/Main.hs"
-      component: "6Q:exe:integerdivision"
+      component: "NoviSteps6Q:exe:integerdivision"
 
-    - path: "./app/integerdivision/Paths_6Q.hs"
-      component: "6Q:exe:integerdivision"
+    - path: "./app/integerdivision/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:integerdivision"
 
     - path: "./app/integerdivisionreturns/Main.hs"
-      component: "6Q:exe:integerdivisionreturns"
+      component: "NoviSteps6Q:exe:integerdivisionreturns"
 
-    - path: "./app/integerdivisionreturns/Paths_6Q.hs"
-      component: "6Q:exe:integerdivisionreturns"
+    - path: "./app/integerdivisionreturns/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:integerdivisionreturns"
 
     - path: "./app/intersection/Main.hs"
-      component: "6Q:exe:intersection"
+      component: "NoviSteps6Q:exe:intersection"
 
-    - path: "./app/intersection/Paths_6Q.hs"
-      component: "6Q:exe:intersection"
+    - path: "./app/intersection/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:intersection"
 
     - path: "./app/inverseprefixsum/Main.hs"
-      component: "6Q:exe:inverseprefixsum"
+      component: "NoviSteps6Q:exe:inverseprefixsum"
 
-    - path: "./app/inverseprefixsum/Paths_6Q.hs"
-      component: "6Q:exe:inverseprefixsum"
+    - path: "./app/inverseprefixsum/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:inverseprefixsum"
 
     - path: "./app/jogging/Main.hs"
-      component: "6Q:exe:jogging"
+      component: "NoviSteps6Q:exe:jogging"
 
-    - path: "./app/jogging/Paths_6Q.hs"
-      component: "6Q:exe:jogging"
+    - path: "./app/jogging/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:jogging"
 
     - path: "./app/keyencebuilding/Main.hs"
-      component: "6Q:exe:keyencebuilding"
+      component: "NoviSteps6Q:exe:keyencebuilding"
 
-    - path: "./app/keyencebuilding/Paths_6Q.hs"
-      component: "6Q:exe:keyencebuilding"
+    - path: "./app/keyencebuilding/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:keyencebuilding"
 
     - path: "./app/letsgetaperfectscore/Main.hs"
-      component: "6Q:exe:letsgetaperfectscore"
+      component: "NoviSteps6Q:exe:letsgetaperfectscore"
 
-    - path: "./app/letsgetaperfectscore/Paths_6Q.hs"
-      component: "6Q:exe:letsgetaperfectscore"
+    - path: "./app/letsgetaperfectscore/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:letsgetaperfectscore"
 
     - path: "./app/log2n/Main.hs"
-      component: "6Q:exe:log2n"
+      component: "NoviSteps6Q:exe:log2n"
 
-    - path: "./app/log2n/Paths_6Q.hs"
-      component: "6Q:exe:log2n"
+    - path: "./app/log2n/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:log2n"
 
     - path: "./app/longestpalindrome/Main.hs"
-      component: "6Q:exe:longestpalindrome"
+      component: "NoviSteps6Q:exe:longestpalindrome"
 
-    - path: "./app/longestpalindrome/Paths_6Q.hs"
-      component: "6Q:exe:longestpalindrome"
+    - path: "./app/longestpalindrome/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:longestpalindrome"
 
     - path: "./app/maintainmultiplesequences/Main.hs"
-      component: "6Q:exe:maintainmultiplesequences"
+      component: "NoviSteps6Q:exe:maintainmultiplesequences"
 
-    - path: "./app/maintainmultiplesequences/Paths_6Q.hs"
-      component: "6Q:exe:maintainmultiplesequences"
+    - path: "./app/maintainmultiplesequences/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:maintainmultiplesequences"
 
     - path: "./app/matrixtransposition/Main.hs"
-      component: "6Q:exe:matrixtransposition"
+      component: "NoviSteps6Q:exe:matrixtransposition"
 
-    - path: "./app/matrixtransposition/Paths_6Q.hs"
-      component: "6Q:exe:matrixtransposition"
+    - path: "./app/matrixtransposition/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:matrixtransposition"
 
     - path: "./app/measure/Main.hs"
-      component: "6Q:exe:measure"
+      component: "NoviSteps6Q:exe:measure"
 
-    - path: "./app/measure/Paths_6Q.hs"
-      component: "6Q:exe:measure"
+    - path: "./app/measure/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:measure"
 
     - path: "./app/mex/Main.hs"
-      component: "6Q:exe:mex"
+      component: "NoviSteps6Q:exe:mex"
 
-    - path: "./app/mex/Paths_6Q.hs"
-      component: "6Q:exe:mex"
+    - path: "./app/mex/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:mex"
 
     - path: "./app/minimizeordering/Main.hs"
-      component: "6Q:exe:minimizeordering"
+      component: "NoviSteps6Q:exe:minimizeordering"
 
-    - path: "./app/minimizeordering/Paths_6Q.hs"
-      component: "6Q:exe:minimizeordering"
+    - path: "./app/minimizeordering/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:minimizeordering"
 
     - path: "./app/misjudgethetime/Main.hs"
-      component: "6Q:exe:misjudgethetime"
+      component: "NoviSteps6Q:exe:misjudgethetime"
 
-    - path: "./app/misjudgethetime/Paths_6Q.hs"
-      component: "6Q:exe:misjudgethetime"
+    - path: "./app/misjudgethetime/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:misjudgethetime"
 
     - path: "./app/mongeness/Main.hs"
-      component: "6Q:exe:mongeness"
+      component: "NoviSteps6Q:exe:mongeness"
 
-    - path: "./app/mongeness/Paths_6Q.hs"
-      component: "6Q:exe:mongeness"
+    - path: "./app/mongeness/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:mongeness"
 
     - path: "./app/nicegrid/Main.hs"
-      component: "6Q:exe:nicegrid"
+      component: "NoviSteps6Q:exe:nicegrid"
 
-    - path: "./app/nicegrid/Paths_6Q.hs"
-      component: "6Q:exe:nicegrid"
+    - path: "./app/nicegrid/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:nicegrid"
 
     - path: "./app/onandoff/Main.hs"
-      component: "6Q:exe:onandoff"
+      component: "NoviSteps6Q:exe:onandoff"
 
-    - path: "./app/onandoff/Paths_6Q.hs"
-      component: "6Q:exe:onandoff"
+    - path: "./app/onandoff/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:onandoff"
 
     - path: "./app/overlappingsheets/Main.hs"
-      component: "6Q:exe:overlappingsheets"
+      component: "NoviSteps6Q:exe:overlappingsheets"
 
-    - path: "./app/overlappingsheets/Paths_6Q.hs"
-      component: "6Q:exe:overlappingsheets"
+    - path: "./app/overlappingsheets/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:overlappingsheets"
 
     - path: "./app/pasta/Main.hs"
-      component: "6Q:exe:pasta"
+      component: "NoviSteps6Q:exe:pasta"
 
-    - path: "./app/pasta/Paths_6Q.hs"
-      component: "6Q:exe:pasta"
+    - path: "./app/pasta/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:pasta"
 
     - path: "./app/pentagon/Main.hs"
-      component: "6Q:exe:pentagon"
+      component: "NoviSteps6Q:exe:pentagon"
 
-    - path: "./app/pentagon/Paths_6Q.hs"
-      component: "6Q:exe:pentagon"
+    - path: "./app/pentagon/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:pentagon"
 
     - path: "./app/perfectstring/Main.hs"
-      component: "6Q:exe:perfectstring"
+      component: "NoviSteps6Q:exe:perfectstring"
 
-    - path: "./app/perfectstring/Paths_6Q.hs"
-      component: "6Q:exe:perfectstring"
+    - path: "./app/perfectstring/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:perfectstring"
 
     - path: "./app/playingcardsvalidation/Main.hs"
-      component: "6Q:exe:playingcardsvalidation"
+      component: "NoviSteps6Q:exe:playingcardsvalidation"
 
-    - path: "./app/playingcardsvalidation/Paths_6Q.hs"
-      component: "6Q:exe:playingcardsvalidation"
+    - path: "./app/playingcardsvalidation/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:playingcardsvalidation"
 
     - path: "./app/postalcard/Main.hs"
-      component: "6Q:exe:postalcard"
+      component: "NoviSteps6Q:exe:postalcard"
 
-    - path: "./app/postalcard/Paths_6Q.hs"
-      component: "6Q:exe:postalcard"
+    - path: "./app/postalcard/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:postalcard"
 
     - path: "./app/practicalcomputing/Main.hs"
-      component: "6Q:exe:practicalcomputing"
+      component: "NoviSteps6Q:exe:practicalcomputing"
 
-    - path: "./app/practicalcomputing/Paths_6Q.hs"
-      component: "6Q:exe:practicalcomputing"
+    - path: "./app/practicalcomputing/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:practicalcomputing"
 
     - path: "./app/prefixandsuffix/Main.hs"
-      component: "6Q:exe:prefixandsuffix"
+      component: "NoviSteps6Q:exe:prefixandsuffix"
 
-    - path: "./app/prefixandsuffix/Paths_6Q.hs"
-      component: "6Q:exe:prefixandsuffix"
+    - path: "./app/prefixandsuffix/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:prefixandsuffix"
 
     - path: "./app/qualificationcontest/Main.hs"
-      component: "6Q:exe:qualificationcontest"
+      component: "NoviSteps6Q:exe:qualificationcontest"
 
-    - path: "./app/qualificationcontest/Paths_6Q.hs"
-      component: "6Q:exe:qualificationcontest"
+    - path: "./app/qualificationcontest/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:qualificationcontest"
 
     - path: "./app/racecar/Main.hs"
-      component: "6Q:exe:racecar"
+      component: "NoviSteps6Q:exe:racecar"
 
-    - path: "./app/racecar/Paths_6Q.hs"
-      component: "6Q:exe:racecar"
+    - path: "./app/racecar/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:racecar"
 
     - path: "./app/rangeswap/Main.hs"
-      component: "6Q:exe:rangeswap"
+      component: "NoviSteps6Q:exe:rangeswap"
 
-    - path: "./app/rangeswap/Paths_6Q.hs"
-      component: "6Q:exe:rangeswap"
+    - path: "./app/rangeswap/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:rangeswap"
 
     - path: "./app/rectangledetection/Main.hs"
-      component: "6Q:exe:rectangledetection"
+      component: "NoviSteps6Q:exe:rectangledetection"
 
-    - path: "./app/rectangledetection/Paths_6Q.hs"
-      component: "6Q:exe:rectangledetection"
+    - path: "./app/rectangledetection/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:rectangledetection"
 
     - path: "./app/repetition/Main.hs"
-      component: "6Q:exe:repetition"
+      component: "NoviSteps6Q:exe:repetition"
 
-    - path: "./app/repetition/Paths_6Q.hs"
-      component: "6Q:exe:repetition"
+    - path: "./app/repetition/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:repetition"
 
     - path: "./app/roundrobintournament/Main.hs"
-      component: "6Q:exe:roundrobintournament"
+      component: "NoviSteps6Q:exe:roundrobintournament"
 
-    - path: "./app/roundrobintournament/Paths_6Q.hs"
-      component: "6Q:exe:roundrobintournament"
+    - path: "./app/roundrobintournament/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:roundrobintournament"
 
     - path: "./app/samename/Main.hs"
-      component: "6Q:exe:samename"
+      component: "NoviSteps6Q:exe:samename"
 
-    - path: "./app/samename/Paths_6Q.hs"
-      component: "6Q:exe:samename"
+    - path: "./app/samename/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:samename"
 
     - path: "./app/sandwichnumber/Main.hs"
-      component: "6Q:exe:sandwichnumber"
+      component: "NoviSteps6Q:exe:sandwichnumber"
 
-    - path: "./app/sandwichnumber/Paths_6Q.hs"
-      component: "6Q:exe:sandwichnumber"
+    - path: "./app/sandwichnumber/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:sandwichnumber"
 
     - path: "./app/savings/Main.hs"
-      component: "6Q:exe:savings"
+      component: "NoviSteps6Q:exe:savings"
 
-    - path: "./app/savings/Paths_6Q.hs"
-      component: "6Q:exe:savings"
+    - path: "./app/savings/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:savings"
 
     - path: "./app/selfpower/Main.hs"
-      component: "6Q:exe:selfpower"
+      component: "NoviSteps6Q:exe:selfpower"
 
-    - path: "./app/selfpower/Paths_6Q.hs"
-      component: "6Q:exe:selfpower"
+    - path: "./app/selfpower/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:selfpower"
 
     - path: "./app/sequenceofabsolutedifferences/Main.hs"
-      component: "6Q:exe:sequenceofabsolutedifferences"
+      component: "NoviSteps6Q:exe:sequenceofabsolutedifferences"
 
-    - path: "./app/sequenceofabsolutedifferences/Paths_6Q.hs"
-      component: "6Q:exe:sequenceofabsolutedifferences"
+    - path: "./app/sequenceofabsolutedifferences/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:sequenceofabsolutedifferences"
 
     - path: "./app/starornot/Main.hs"
-      component: "6Q:exe:starornot"
+      component: "NoviSteps6Q:exe:starornot"
 
-    - path: "./app/starornot/Paths_6Q.hs"
-      component: "6Q:exe:starornot"
+    - path: "./app/starornot/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:starornot"
 
     - path: "./app/stringshifting/Main.hs"
-      component: "6Q:exe:stringshifting"
+      component: "NoviSteps6Q:exe:stringshifting"
 
-    - path: "./app/stringshifting/Paths_6Q.hs"
-      component: "6Q:exe:stringshifting"
+    - path: "./app/stringshifting/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:stringshifting"
 
     - path: "./app/takahashisfailure/Main.hs"
-      component: "6Q:exe:takahashisfailure"
+      component: "NoviSteps6Q:exe:takahashisfailure"
 
-    - path: "./app/takahashisfailure/Paths_6Q.hs"
-      component: "6Q:exe:takahashisfailure"
+    - path: "./app/takahashisfailure/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:takahashisfailure"
 
     - path: "./app/takahashissecret/Main.hs"
-      component: "6Q:exe:takahashissecret"
+      component: "NoviSteps6Q:exe:takahashissecret"
 
-    - path: "./app/takahashissecret/Paths_6Q.hs"
-      component: "6Q:exe:takahashissecret"
+    - path: "./app/takahashissecret/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:takahashissecret"
 
     - path: "./app/tetrahedralnumber/Main.hs"
-      component: "6Q:exe:tetrahedralnumber"
+      component: "NoviSteps6Q:exe:tetrahedralnumber"
 
-    - path: "./app/tetrahedralnumber/Paths_6Q.hs"
-      component: "6Q:exe:tetrahedralnumber"
+    - path: "./app/tetrahedralnumber/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:tetrahedralnumber"
 
     - path: "./app/themiddleday/Main.hs"
-      component: "6Q:exe:themiddleday"
+      component: "NoviSteps6Q:exe:themiddleday"
 
-    - path: "./app/themiddleday/Paths_6Q.hs"
-      component: "6Q:exe:themiddleday"
+    - path: "./app/themiddleday/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:themiddleday"
 
     - path: "./app/threeleggedrace/Main.hs"
-      component: "6Q:exe:threeleggedrace"
+      component: "NoviSteps6Q:exe:threeleggedrace"
 
-    - path: "./app/threeleggedrace/Paths_6Q.hs"
-      component: "6Q:exe:threeleggedrace"
+    - path: "./app/threeleggedrace/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:threeleggedrace"
+
+    - path: "./app/ticketcounter/Main.hs"
+      component: "NoviSteps6Q:exe:ticketcounter"
+
+    - path: "./app/ticketcounter/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:ticketcounter"
 
     - path: "./app/tobesaikyo/Main.hs"
-      component: "6Q:exe:tobesaikyo"
+      component: "NoviSteps6Q:exe:tobesaikyo"
 
-    - path: "./app/tobesaikyo/Paths_6Q.hs"
-      component: "6Q:exe:tobesaikyo"
+    - path: "./app/tobesaikyo/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:tobesaikyo"
 
     - path: "./app/tournamentresult/Main.hs"
-      component: "6Q:exe:tournamentresult"
+      component: "NoviSteps6Q:exe:tournamentresult"
 
-    - path: "./app/tournamentresult/Paths_6Q.hs"
-      component: "6Q:exe:tournamentresult"
+    - path: "./app/tournamentresult/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:tournamentresult"
 
     - path: "./app/triplemetre/Main.hs"
-      component: "6Q:exe:triplemetre"
+      component: "NoviSteps6Q:exe:triplemetre"
 
-    - path: "./app/triplemetre/Paths_6Q.hs"
-      component: "6Q:exe:triplemetre"
+    - path: "./app/triplemetre/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:triplemetre"
 
     - path: "./app/tshirt/Main.hs"
-      component: "6Q:exe:tshirt"
+      component: "NoviSteps6Q:exe:tshirt"
 
-    - path: "./app/tshirt/Paths_6Q.hs"
-      component: "6Q:exe:tshirt"
+    - path: "./app/tshirt/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:tshirt"
 
     - path: "./app/typo/Main.hs"
-      component: "6Q:exe:typo"
+      component: "NoviSteps6Q:exe:typo"
 
-    - path: "./app/typo/Paths_6Q.hs"
-      component: "6Q:exe:typo"
+    - path: "./app/typo/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:typo"
 
     - path: "./app/vacationtogether/Main.hs"
-      component: "6Q:exe:vacationtogether"
+      component: "NoviSteps6Q:exe:vacationtogether"
 
-    - path: "./app/vacationtogether/Paths_6Q.hs"
-      component: "6Q:exe:vacationtogether"
+    - path: "./app/vacationtogether/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:vacationtogether"
 
     - path: "./app/whichisahead/Main.hs"
-      component: "6Q:exe:whichisahead"
+      component: "NoviSteps6Q:exe:whichisahead"
 
-    - path: "./app/whichisahead/Paths_6Q.hs"
-      component: "6Q:exe:whichisahead"
+    - path: "./app/whichisahead/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:whichisahead"
 
     - path: "./app/whoismissing/Main.hs"
-      component: "6Q:exe:whoismissing"
+      component: "NoviSteps6Q:exe:whoismissing"
 
-    - path: "./app/whoismissing/Paths_6Q.hs"
-      component: "6Q:exe:whoismissing"
+    - path: "./app/whoismissing/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:whoismissing"
 
     - path: "./app/yellowandredcard/Main.hs"
-      component: "6Q:exe:yellowandredcard"
+      component: "NoviSteps6Q:exe:yellowandredcard"
 
-    - path: "./app/yellowandredcard/Paths_6Q.hs"
-      component: "6Q:exe:yellowandredcard"
+    - path: "./app/yellowandredcard/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:yellowandredcard"
 
     - path: "./app/zorome/Main.hs"
-      component: "6Q:exe:zorome"
+      component: "NoviSteps6Q:exe:zorome"
 
-    - path: "./app/zorome/Paths_6Q.hs"
-      component: "6Q:exe:zorome"
-
-    - path: "./test"
-      component: "6Q:test:6Q-doctest"
+    - path: "./app/zorome/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:zorome"
 
     - path: "./test"
-      component: "6Q:test:6Q-test"
+      component: "NoviSteps6Q:test:NoviSteps6Q-doctest"
+
+    - path: "./test"
+      component: "NoviSteps6Q:test:NoviSteps6Q-test"

@@ -1,4 +1,0 @@
-#!/bin/bash
-echo "export HOGE=$1" | tee .curenv
-source .curenv
-echo $HOGE

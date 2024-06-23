@@ -1,4 +1,4 @@
-name:                6Q
+name:                NoviSteps6Q
 version:             0.0.0
 github:              nobsun/6Q
 license:             BSD3
@@ -63,13 +63,21 @@ library:
   source-dirs: src
 
 executables:
+  ticketcounter:
+    main:               Main.hs
+    source-dirs:        app/ticketcounter
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   atcoderamusementpark:
     main:            Main.hs
     source-dirs:     app/atcoderamusementpark
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   binaryrepresentation1:
     main:            Main.hs
@@ -77,7 +85,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   threeleggedrace:
     main:            Main.hs
@@ -85,7 +93,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   repetition:
     main:            Main.hs
@@ -93,7 +101,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   sequenceofabsolutedifferences:
     main:            Main.hs
@@ -101,7 +109,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   ex24:
     main:            Main.hs
@@ -109,7 +117,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   ex23:
     main:            Main.hs
@@ -117,7 +125,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   ex22:
     main:            Main.hs
@@ -125,7 +133,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   ex18:
     main:            Main.hs
@@ -133,7 +141,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   200thabc:
     main:            Main.hs
@@ -141,7 +149,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   2ndhighestmountain:
     main:            Main.hs
@@ -149,7 +157,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   atcodercondominium:
     main:            Main.hs
@@ -157,7 +165,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   savings:
     main:            Main.hs
@@ -165,7 +173,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   bitwisexor:
     main:            Main.hs
@@ -173,7 +181,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   boobyprize:
     main:            Main.hs
@@ -181,7 +189,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   howmany:
     main:            Main.hs
@@ -189,7 +197,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   log2n:
     main:            Main.hs
@@ -197,7 +205,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   samename:
     main:            Main.hs
@@ -205,7 +213,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   basek:
     main:            Main.hs
@@ -213,7 +221,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   typo:
     main:            Main.hs
@@ -221,7 +229,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   stringshifting:
     main:            Main.hs
@@ -229,7 +237,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   mongeness:
     main:            Main.hs
@@ -237,7 +245,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   starornot:
     main:            Main.hs
@@ -245,7 +253,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   keyencebuilding:
     main:            Main.hs
@@ -253,7 +261,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   onandoff:
     main:            Main.hs
@@ -261,7 +269,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   takahashissecret:
     main:            Main.hs
@@ -269,7 +277,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   hardcalculation:
     main:            Main.hs
@@ -277,7 +285,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   triplemetre:
     main:            Main.hs
@@ -285,7 +293,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   election:
     main:            Main.hs
@@ -293,7 +301,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   caesarcipher:
     main:            Main.hs
@@ -301,7 +309,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   whoismissing:
     main:            Main.hs
@@ -309,7 +317,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   matrixtransposition:
     main:            Main.hs
@@ -317,7 +325,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   exponentialorquadratic:
     main:            Main.hs
@@ -325,7 +333,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   integerdivision:
     main:            Main.hs
@@ -333,7 +341,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   countdistinctinteger:
     main:            Main.hs
@@ -341,7 +349,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   pasta:
     main:            Main.hs
@@ -349,7 +357,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   tshirt:
     main:            Main.hs
@@ -357,7 +365,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   minimizeordering:
     main:            Main.hs
@@ -365,7 +373,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   hitandblow:
     main:            Main.hs
@@ -373,7 +381,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   gostraightandturnright:
     main:            Main.hs
@@ -381,7 +389,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   mex:
     main:            Main.hs
@@ -389,7 +397,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   fourpoints:
     main:            Main.hs
@@ -397,7 +405,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   jogging:
     main:            Main.hs
@@ -405,7 +413,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   perfectstring:
     main:            Main.hs
@@ -413,7 +421,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   adjacentsquares:
     main:            Main.hs
@@ -421,7 +429,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   takahashisfailure:
     main:            Main.hs
@@ -429,7 +437,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   distancebetweentokens:
     main:            Main.hs
@@ -437,7 +445,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   practicalcomputing:
     main:            Main.hs
@@ -445,7 +453,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   batters:
     main:            Main.hs
@@ -453,7 +461,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   1dpawn:
     main:            Main.hs
@@ -461,7 +469,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   growthrecord:
     main:            Main.hs
@@ -469,7 +477,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   intersection:
     main:            Main.hs
@@ -477,7 +485,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   tournamentresult:
     main:            Main.hs
@@ -485,7 +493,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   fullhouse:
     main:            Main.hs
@@ -493,7 +501,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   ancestor:
     main:            Main.hs
@@ -501,7 +509,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   nicegrid:
     main:            Main.hs
@@ -509,7 +517,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   rectangledetection:
     main:            Main.hs
@@ -517,7 +525,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   124test:
     main:            Main.hs
@@ -525,7 +533,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   hammer:
     main:            Main.hs
@@ -533,7 +541,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   484558:
     main:            Main.hs
@@ -541,7 +549,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   maintainmultiplesequences:
     main:            Main.hs
@@ -549,7 +557,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   everyoneisfriends:
     main:            Main.hs
@@ -557,7 +565,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   brokenrounding:
     main:            Main.hs
@@ -565,7 +573,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   playingcardsvalidation:
     main:            Main.hs
@@ -573,7 +581,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   misjudgethetime:
     main:            Main.hs
@@ -581,7 +589,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   inverseprefixsum:
     main:            Main.hs
@@ -589,7 +597,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   sandwichnumber:
     main:            Main.hs
@@ -597,7 +605,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   letsgetaperfectscore:
     main:            Main.hs
@@ -605,7 +613,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   rangeswap:
     main:            Main.hs
@@ -613,7 +621,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   postalcard:
     main:            Main.hs
@@ -621,7 +629,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   qualificationcontest:
     main:            Main.hs
@@ -629,7 +637,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   yellowandredcard:
     main:            Main.hs
@@ -637,7 +645,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   calltheidnumber:
     main:            Main.hs
@@ -645,7 +653,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   asciiart:
     main:            Main.hs
@@ -653,7 +661,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   fillthegaps:
     main:            Main.hs
@@ -661,7 +669,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   abcdefg:
     main:            Main.hs
@@ -669,7 +677,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   racecar:
     main:            Main.hs
@@ -677,7 +685,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   defaultprice:
     main:            Main.hs
@@ -685,7 +693,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   vacationtogether:
     main:            Main.hs
@@ -693,7 +701,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   tobesaikyo:
     main:            Main.hs
@@ -701,7 +709,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   themiddleday:
     main:            Main.hs
@@ -709,7 +717,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   overlappingsheets:
     main:            Main.hs
@@ -717,7 +725,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   measure:
     main:            Main.hs
@@ -725,7 +733,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   longestpalindrome:
     main:            Main.hs
@@ -733,7 +741,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   prefixandsuffix:
     main:            Main.hs
@@ -741,7 +749,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   roundrobintournament:
     main:            Main.hs
@@ -749,7 +757,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   3smoothnumbers:
     main:            Main.hs
@@ -757,7 +765,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   selfpower:
     main:            Main.hs
@@ -765,7 +773,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   zorome:
     main:            Main.hs
@@ -773,7 +781,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   glassandmug:
     main:            Main.hs
@@ -781,7 +789,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   pentagon:
     main:            Main.hs
@@ -789,7 +797,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   tetrahedralnumber:
     main:            Main.hs
@@ -797,7 +805,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   extendedabc:
     main:            Main.hs
@@ -805,7 +813,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   frequency:
     main:            Main.hs
@@ -813,7 +821,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   append:
     main:            Main.hs
@@ -821,7 +829,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   whichisahead:
     main:            Main.hs
@@ -829,7 +837,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   integerdivisionreturns:
     main:            Main.hs
@@ -837,7 +845,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   farthestpoint:
     main:            Main.hs
@@ -845,7 +853,7 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
   dentistaoki:
     main:            Main.hs
@@ -853,9 +861,9 @@ executables:
     ghc-options:
     - -rtsopts
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
-  6Q:
+  NoviSteps6Q:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -863,10 +871,10 @@ executables:
     # - -threaded
     # - -with-rtsopts=-N
     dependencies:
-    - 6Q
+    - NoviSteps6Q
 
 tests:
-  6Q-test:
+  NoviSteps6Q-test:
     main:                spec.hs
     source-dirs:         test
     # ghc-options:
@@ -874,11 +882,11 @@ tests:
     # - -rtsopts
     # - -with-rtsopts=-N
     dependencies:
-    - 6Q
+    - NoviSteps6Q
     - hspec
     - main-tester
 
-  6Q-doctest:
+  NoviSteps6Q-doctest:
     main:                doctests.hs
     source-dirs:         test
     # ghc-options:
@@ -886,5 +894,5 @@ tests:
     # - -rtsopts
     # - -with-rtsopts=-N
     dependencies:
-    - 6Q
+    - NoviSteps6Q
     - doctest
