@@ -63,6 +63,294 @@ library:
   source-dirs: src
 
 executables:
+  coins:
+    main:               Main.hs
+    source-dirs:        app/coins
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  somesums:
+    main:               Main.hs
+    source-dirs:        app/somesums
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  twoanagram:
+    main:               Main.hs
+    source-dirs:        app/twoanagram
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  shiftonly:
+    main:               Main.hs
+    source-dirs:        app/shiftonly
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  isu:
+    main:               Main.hs
+    source-dirs:        app/isu
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  aroundsquare:
+    main:               Main.hs
+    source-dirs:        app/aroundsquare
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  addandmult:
+    main:               Main.hs
+    source-dirs:        app/addandmult
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  minesweeper:
+    main:               Main.hs
+    source-dirs:        app/minesweeper
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  notfound:
+    main:               Main.hs
+    source-dirs:        app/notfound
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  twoswitches:
+    main:               Main.hs
+    source-dirs:        app/twoswitches
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  breaknumber:
+    main:               Main.hs
+    source-dirs:        app/breaknumber
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  snaketoy:
+    main:               Main.hs
+    source-dirs:        app/snaketoy
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  ss:
+    main:               Main.hs
+    source-dirs:        app/ss
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  varied:
+    main:               Main.hs
+    source-dirs:        app/varied
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  pictureframe:
+    main:               Main.hs
+    source-dirs:        app/pictureframe
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  secondbest:
+    main:               Main.hs
+    source-dirs:        app/secondbest
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  gridwalk:
+    main:               Main.hs
+    source-dirs:        app/gridwalk
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  japanesecurseddoll:
+    main:               Main.hs
+    source-dirs:        app/japanesecurseddoll
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  righttriangle:
+    main:               Main.hs
+    source-dirs:        app/righttriangle
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  makeingtriangle:
+    main:               Main.hs
+    source-dirs:        app/makeingtriangle
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  mixjuice:
+    main:               Main.hs
+    source-dirs:        app/mixjuice
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  kthcommondivisor:
+    main:               Main.hs
+    source-dirs:        app/kthcommondivisor
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  checkpoints:
+    main:               Main.hs
+    source-dirs:        app/checkpoints
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  narrowrectangleeasy:
+    main:               Main.hs
+    source-dirs:        app/narrowrectangleeasy
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  contestwithdrinkseasy:
+    main:               Main.hs
+    source-dirs:        app/contestwithdrinkseasy
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  printingballswithatcodeer:
+    main:               Main.hs
+    source-dirs:        app/printingballswithatcodeer
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  cardgameforthree:
+    main:               Main.hs
+    source-dirs:        app/cardgameforthree
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  beautifulstring:
+    main:               Main.hs
+    source-dirs:        app/beautifulstring
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  unhappyhacking:
+    main:               Main.hs
+    source-dirs:        app/unhappyhacking
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  marathonrace:
+    main:               Main.hs
+    source-dirs:        app/marathonrace
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  score:
+    main:               Main.hs
+    source-dirs:        app/score
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  rarenumber:
+    main:               Main.hs
+    source-dirs:        app/rarenumber
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  boxesandkeys:
+    main:               Main.hs
+    source-dirs:        app/boxesandkeys
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  bitaroandioi:
+    main:               Main.hs
+    source-dirs:        app/bitaroandioi
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  mode:
+    main:               Main.hs
+    source-dirs:        app/mode
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  miteishutu:
+    main:               Main.hs
+    source-dirs:        app/miteishutu
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   nearestpoints:
     main:               Main.hs
     source-dirs:        app/nearestpoints

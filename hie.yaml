@@ -51,6 +51,12 @@ cradle:
     - path: "./app/abcdefg/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:abcdefg"
 
+    - path: "./app/addandmult/Main.hs"
+      component: "NoviSteps6Q:exe:addandmult"
+
+    - path: "./app/addandmult/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:addandmult"
+
     - path: "./app/adjacentsquares/Main.hs"
       component: "NoviSteps6Q:exe:adjacentsquares"
 
@@ -68,6 +74,12 @@ cradle:
 
     - path: "./app/append/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:append"
+
+    - path: "./app/aroundsquare/Main.hs"
+      component: "NoviSteps6Q:exe:aroundsquare"
+
+    - path: "./app/aroundsquare/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:aroundsquare"
 
     - path: "./app/asciiart/Main.hs"
       component: "NoviSteps6Q:exe:asciiart"
@@ -99,11 +111,23 @@ cradle:
     - path: "./app/batters/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:batters"
 
+    - path: "./app/beautifulstring/Main.hs"
+      component: "NoviSteps6Q:exe:beautifulstring"
+
+    - path: "./app/beautifulstring/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:beautifulstring"
+
     - path: "./app/binaryrepresentation1/Main.hs"
       component: "NoviSteps6Q:exe:binaryrepresentation1"
 
     - path: "./app/binaryrepresentation1/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:binaryrepresentation1"
+
+    - path: "./app/bitaroandioi/Main.hs"
+      component: "NoviSteps6Q:exe:bitaroandioi"
+
+    - path: "./app/bitaroandioi/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:bitaroandioi"
 
     - path: "./app/bitwisexor/Main.hs"
       component: "NoviSteps6Q:exe:bitwisexor"
@@ -116,6 +140,18 @@ cradle:
 
     - path: "./app/boobyprize/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:boobyprize"
+
+    - path: "./app/boxesandkeys/Main.hs"
+      component: "NoviSteps6Q:exe:boxesandkeys"
+
+    - path: "./app/boxesandkeys/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:boxesandkeys"
+
+    - path: "./app/breaknumber/Main.hs"
+      component: "NoviSteps6Q:exe:breaknumber"
+
+    - path: "./app/breaknumber/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:breaknumber"
 
     - path: "./app/brokenrounding/Main.hs"
       component: "NoviSteps6Q:exe:brokenrounding"
@@ -135,11 +171,35 @@ cradle:
     - path: "./app/calltheidnumber/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:calltheidnumber"
 
+    - path: "./app/cardgameforthree/Main.hs"
+      component: "NoviSteps6Q:exe:cardgameforthree"
+
+    - path: "./app/cardgameforthree/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:cardgameforthree"
+
+    - path: "./app/checkpoints/Main.hs"
+      component: "NoviSteps6Q:exe:checkpoints"
+
+    - path: "./app/checkpoints/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:checkpoints"
+
     - path: "./app/choosecards1/Main.hs"
       component: "NoviSteps6Q:exe:choosecards1"
 
     - path: "./app/choosecards1/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:choosecards1"
+
+    - path: "./app/coins/Main.hs"
+      component: "NoviSteps6Q:exe:coins"
+
+    - path: "./app/coins/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:coins"
+
+    - path: "./app/contestwithdrinkseasy/Main.hs"
+      component: "NoviSteps6Q:exe:contestwithdrinkseasy"
+
+    - path: "./app/contestwithdrinkseasy/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:contestwithdrinkseasy"
 
     - path: "./app/countdistinctinteger/Main.hs"
       component: "NoviSteps6Q:exe:countdistinctinteger"
@@ -261,6 +321,12 @@ cradle:
     - path: "./app/gostraightandturnright/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:gostraightandturnright"
 
+    - path: "./app/gridwalk/Main.hs"
+      component: "NoviSteps6Q:exe:gridwalk"
+
+    - path: "./app/gridwalk/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:gridwalk"
+
     - path: "./app/growthrecord/Main.hs"
       component: "NoviSteps6Q:exe:growthrecord"
 
@@ -315,6 +381,18 @@ cradle:
     - path: "./app/inverseprefixsum/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:inverseprefixsum"
 
+    - path: "./app/isu/Main.hs"
+      component: "NoviSteps6Q:exe:isu"
+
+    - path: "./app/isu/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:isu"
+
+    - path: "./app/japanesecurseddoll/Main.hs"
+      component: "NoviSteps6Q:exe:japanesecurseddoll"
+
+    - path: "./app/japanesecurseddoll/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:japanesecurseddoll"
+
     - path: "./app/jogging/Main.hs"
       component: "NoviSteps6Q:exe:jogging"
 
@@ -326,6 +404,12 @@ cradle:
 
     - path: "./app/keyencebuilding/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:keyencebuilding"
+
+    - path: "./app/kthcommondivisor/Main.hs"
+      component: "NoviSteps6Q:exe:kthcommondivisor"
+
+    - path: "./app/kthcommondivisor/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:kthcommondivisor"
 
     - path: "./app/letsgetaperfectscore/Main.hs"
       component: "NoviSteps6Q:exe:letsgetaperfectscore"
@@ -351,6 +435,18 @@ cradle:
     - path: "./app/maintainmultiplesequences/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:maintainmultiplesequences"
 
+    - path: "./app/makeingtriangle/Main.hs"
+      component: "NoviSteps6Q:exe:makeingtriangle"
+
+    - path: "./app/makeingtriangle/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:makeingtriangle"
+
+    - path: "./app/marathonrace/Main.hs"
+      component: "NoviSteps6Q:exe:marathonrace"
+
+    - path: "./app/marathonrace/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:marathonrace"
+
     - path: "./app/matrixtransposition/Main.hs"
       component: "NoviSteps6Q:exe:matrixtransposition"
 
@@ -369,6 +465,12 @@ cradle:
     - path: "./app/mex/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:mex"
 
+    - path: "./app/minesweeper/Main.hs"
+      component: "NoviSteps6Q:exe:minesweeper"
+
+    - path: "./app/minesweeper/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:minesweeper"
+
     - path: "./app/minimizeordering/Main.hs"
       component: "NoviSteps6Q:exe:minimizeordering"
 
@@ -381,11 +483,35 @@ cradle:
     - path: "./app/misjudgethetime/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:misjudgethetime"
 
+    - path: "./app/miteishutu/Main.hs"
+      component: "NoviSteps6Q:exe:miteishutu"
+
+    - path: "./app/miteishutu/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:miteishutu"
+
+    - path: "./app/mixjuice/Main.hs"
+      component: "NoviSteps6Q:exe:mixjuice"
+
+    - path: "./app/mixjuice/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:mixjuice"
+
+    - path: "./app/mode/Main.hs"
+      component: "NoviSteps6Q:exe:mode"
+
+    - path: "./app/mode/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:mode"
+
     - path: "./app/mongeness/Main.hs"
       component: "NoviSteps6Q:exe:mongeness"
 
     - path: "./app/mongeness/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:mongeness"
+
+    - path: "./app/narrowrectangleeasy/Main.hs"
+      component: "NoviSteps6Q:exe:narrowrectangleeasy"
+
+    - path: "./app/narrowrectangleeasy/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:narrowrectangleeasy"
 
     - path: "./app/nearestpoints/Main.hs"
       component: "NoviSteps6Q:exe:nearestpoints"
@@ -398,6 +524,12 @@ cradle:
 
     - path: "./app/nicegrid/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:nicegrid"
+
+    - path: "./app/notfound/Main.hs"
+      component: "NoviSteps6Q:exe:notfound"
+
+    - path: "./app/notfound/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:notfound"
 
     - path: "./app/onandoff/Main.hs"
       component: "NoviSteps6Q:exe:onandoff"
@@ -429,6 +561,12 @@ cradle:
     - path: "./app/perfectstring/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:perfectstring"
 
+    - path: "./app/pictureframe/Main.hs"
+      component: "NoviSteps6Q:exe:pictureframe"
+
+    - path: "./app/pictureframe/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:pictureframe"
+
     - path: "./app/playingcardsvalidation/Main.hs"
       component: "NoviSteps6Q:exe:playingcardsvalidation"
 
@@ -453,6 +591,12 @@ cradle:
     - path: "./app/prefixandsuffix/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:prefixandsuffix"
 
+    - path: "./app/printingballswithatcodeer/Main.hs"
+      component: "NoviSteps6Q:exe:printingballswithatcodeer"
+
+    - path: "./app/printingballswithatcodeer/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:printingballswithatcodeer"
+
     - path: "./app/qualificationcontest/Main.hs"
       component: "NoviSteps6Q:exe:qualificationcontest"
 
@@ -471,6 +615,12 @@ cradle:
     - path: "./app/rangeswap/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:rangeswap"
 
+    - path: "./app/rarenumber/Main.hs"
+      component: "NoviSteps6Q:exe:rarenumber"
+
+    - path: "./app/rarenumber/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:rarenumber"
+
     - path: "./app/rectangledetection/Main.hs"
       component: "NoviSteps6Q:exe:rectangledetection"
 
@@ -482,6 +632,12 @@ cradle:
 
     - path: "./app/repetition/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:repetition"
+
+    - path: "./app/righttriangle/Main.hs"
+      component: "NoviSteps6Q:exe:righttriangle"
+
+    - path: "./app/righttriangle/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:righttriangle"
 
     - path: "./app/roundrobintournament/Main.hs"
       component: "NoviSteps6Q:exe:roundrobintournament"
@@ -507,6 +663,18 @@ cradle:
     - path: "./app/savings/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:savings"
 
+    - path: "./app/score/Main.hs"
+      component: "NoviSteps6Q:exe:score"
+
+    - path: "./app/score/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:score"
+
+    - path: "./app/secondbest/Main.hs"
+      component: "NoviSteps6Q:exe:secondbest"
+
+    - path: "./app/secondbest/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:secondbest"
+
     - path: "./app/selfpower/Main.hs"
       component: "NoviSteps6Q:exe:selfpower"
 
@@ -518,6 +686,30 @@ cradle:
 
     - path: "./app/sequenceofabsolutedifferences/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:sequenceofabsolutedifferences"
+
+    - path: "./app/shiftonly/Main.hs"
+      component: "NoviSteps6Q:exe:shiftonly"
+
+    - path: "./app/shiftonly/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:shiftonly"
+
+    - path: "./app/snaketoy/Main.hs"
+      component: "NoviSteps6Q:exe:snaketoy"
+
+    - path: "./app/snaketoy/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:snaketoy"
+
+    - path: "./app/somesums/Main.hs"
+      component: "NoviSteps6Q:exe:somesums"
+
+    - path: "./app/somesums/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:somesums"
+
+    - path: "./app/ss/Main.hs"
+      component: "NoviSteps6Q:exe:ss"
+
+    - path: "./app/ss/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:ss"
 
     - path: "./app/starornot/Main.hs"
       component: "NoviSteps6Q:exe:starornot"
@@ -591,17 +783,41 @@ cradle:
     - path: "./app/tshirt/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:tshirt"
 
+    - path: "./app/twoanagram/Main.hs"
+      component: "NoviSteps6Q:exe:twoanagram"
+
+    - path: "./app/twoanagram/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:twoanagram"
+
+    - path: "./app/twoswitches/Main.hs"
+      component: "NoviSteps6Q:exe:twoswitches"
+
+    - path: "./app/twoswitches/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:twoswitches"
+
     - path: "./app/typo/Main.hs"
       component: "NoviSteps6Q:exe:typo"
 
     - path: "./app/typo/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:typo"
 
+    - path: "./app/unhappyhacking/Main.hs"
+      component: "NoviSteps6Q:exe:unhappyhacking"
+
+    - path: "./app/unhappyhacking/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:unhappyhacking"
+
     - path: "./app/vacationtogether/Main.hs"
       component: "NoviSteps6Q:exe:vacationtogether"
 
     - path: "./app/vacationtogether/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:vacationtogether"
+
+    - path: "./app/varied/Main.hs"
+      component: "NoviSteps6Q:exe:varied"
+
+    - path: "./app/varied/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:varied"
 
     - path: "./app/whichisahead/Main.hs"
       component: "NoviSteps6Q:exe:whichisahead"
