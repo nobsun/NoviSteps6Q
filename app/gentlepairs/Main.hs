@@ -22,6 +22,7 @@ import Data.IntMap qualified as IM
 import Data.IntSet qualified as IS
 import Data.List
 import Data.Map qualified as M
+import Data.Ratio
 import Data.Set qualified as S
 import Data.Vector qualified as V
 
@@ -33,16 +34,24 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = [(I,I)] -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    ps -> case combinations 2 ps of
+        pss -> iter 0 pss where
+            iter c = \ case
+                [] -> c
+                [(x,y),(z,w)] : rs 
+                    | x == z    -> iter c rs
+                    | abs (y-w) <= abs (x-z) -> iter (succ c) rs
+                    | otherwise -> iter c rs
+                _ -> invalid
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:xys -> case f (toTuple <$> xys) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

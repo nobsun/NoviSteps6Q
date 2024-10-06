@@ -9,6 +9,7 @@
 {-# LANGUAGE OverloadedRecordDot, NoFieldSelectors, DuplicateRecordFields #-}
 module Main where
 
+import Control.Arrow
 import Data.ByteString.Char8 qualified as B
 import Data.Maybe
 import Data.Ord
@@ -30,19 +31,35 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
-type O = Int
+type I = String
+type O = String
 
-type Solver = () -> ()
+type Solver = (Int,[(Int, I)]) -> [O]
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (n,cs) -> case accumArray phi 0 (1,n) ds of
+        ar -> map psi ds
+            where
+                psi = \ case
+                    (i,(j,_)) -> bool "No" "Yes" (ar ! i == j)
+        where
+            ds :: [(Int, (Int,I))]
+            ds = zipWith f [1..] cs
+    where
+        f :: Int -> (Int, I) -> (Int, (Int, I))
+        f j (i,g) = (i, (j, g))
+        phi :: Int -> (Int, I) -> Int
+        phi t = \ case
+            (j,g)
+                | t /= 0    -> t
+                | g /= "M"  -> t
+                | otherwise -> j
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [n,_]:cs -> case f (read n, map (first read . toTuple) cs) of
+        rr -> map (:[]) rr
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
@@ -60,10 +77,6 @@ class InterfaceForOJS a where
     showBs = B.unwords . map showB
     encode :: [[a]] -> B.ByteString
     encode = B.unlines . map showBs
-
-instance InterfaceForOJS B.ByteString where
-    readB = id
-    showB = id
 
 instance InterfaceForOJS Int where
     readB = readInt

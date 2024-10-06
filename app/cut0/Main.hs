@@ -17,6 +17,7 @@ import Data.Array
 import Data.Bool
 import Data.Char
 import Data.Function
+import Numeric hiding (showInt, readInt)
 
 import Data.IntMap qualified as IM
 import Data.IntSet qualified as IS
@@ -30,19 +31,23 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
-type O = Int
+type I = Double
+type O = String
 
-type Solver = () -> ()
+type Solver = I -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    d -> case break ('.' ==) ds of
+        (a,_:"0") -> a
+        _         -> ds
+        where
+            ds = showFFloat Nothing d ""
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [d]:_ -> case f d of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

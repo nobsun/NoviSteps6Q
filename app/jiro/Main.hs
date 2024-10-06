@@ -30,19 +30,21 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
-type O = Int
+type I = String
+type O = String
 
-type Solver = () -> ()
+type Solver = (I,I,I) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (c,b,a)
+        | c == b    -> bool "C" "B" (a == b)
+        | otherwise -> "A"
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [c,b,a]:_ -> case f (c,b,a) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
@@ -60,10 +62,6 @@ class InterfaceForOJS a where
     showBs = B.unwords . map showB
     encode :: [[a]] -> B.ByteString
     encode = B.unlines . map showBs
-
-instance InterfaceForOJS B.ByteString where
-    readB = id
-    showB = id
 
 instance InterfaceForOJS Int where
     readB = readInt

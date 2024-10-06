@@ -1,0 +1,3 @@
+#!/bin/bash
+source .curenv
+stack exec -- ghci app/$CURRENT_ATCODER_PROJECT/Main.hs

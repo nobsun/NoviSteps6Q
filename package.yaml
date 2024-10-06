@@ -63,6 +63,166 @@ library:
   source-dirs: src
 
 executables:
+  stringpalindrome:
+    main:               Main.hs
+    source-dirs:        app/stringpalindrome
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  1percent:
+    main:               Main.hs
+    source-dirs:        app/1percent
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  trickortreat:
+    main:               Main.hs
+    source-dirs:        app/trickortreat
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  substring:
+    main:               Main.hs
+    source-dirs:        app/substring
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  almostgcd:
+    main:               Main.hs
+    source-dirs:        app/almostgcd
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  billiards:
+    main:               Main.hs
+    source-dirs:        app/billiards
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  gentlepairs:
+    main:               Main.hs
+    source-dirs:        app/gentlepairs
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  alcoholic:
+    main:               Main.hs
+    source-dirs:        app/alcoholic
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  unvarnishedreport:
+    main:               Main.hs
+    source-dirs:        app/unvarnishedreport
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  manyoranges:
+    main:               Main.hs
+    source-dirs:        app/manyoranges
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  visibility:
+    main:               Main.hs
+    source-dirs:        app/visibility
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  palindromewithleadingzeros:
+    main:               Main.hs
+    source-dirs:        app/palindromewithleadingzeros
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  cut0:
+    main:               Main.hs
+    source-dirs:        app/cut0
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  shouteveryday:
+    main:               Main.hs
+    source-dirs:        app/shouteveryday
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  decreasetwomaxelems:
+    main:               Main.hs
+    source-dirs:        app/decreasetwomaxelems
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  piano3:
+    main:               Main.hs
+    source-dirs:        app/piano3
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  369:
+    main:               Main.hs
+    source-dirs:        app/369
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  taro:
+    main:               Main.hs
+    source-dirs:        app/taro
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  jiro:
+    main:               Main.hs
+    source-dirs:        app/jiro
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  1dkeyboard:
+    main:               Main.hs
+    source-dirs:        app/1dkeyboard
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   coins:
     main:               Main.hs
     source-dirs:        app/coins

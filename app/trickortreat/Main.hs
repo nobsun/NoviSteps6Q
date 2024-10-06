@@ -33,17 +33,24 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = (I,[I]) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (n, ss) -> S.size $ S.fromList [1 .. n] S.\\ S.fromList ss
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [n,_]:tss -> case f (n,g tss) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
+    where
+        g = iter []
+            where
+                iter a = \ case
+                    [] -> a
+                    _:c:cs -> iter (c++a) cs
+                    _  -> invalid
 
 main :: IO ()
 main = B.interact (encode . wrap solve . decode)

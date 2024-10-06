@@ -30,19 +30,32 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
+type I = Char
 type O = Int
 
-type Solver = () -> ()
+type Solver = (Int,Int,[[I]]) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (x,y,as) -> case (toZipper y' (as !! x'), toZipper x' (transpose as !! y')) of
+        ((ps,_,rs), (ss,_,us)) -> succ (sum (fst . spanCount ('.' ==) <$> [ps,rs,ss,us]))
+        where
+            x' = pred x
+            y' = pred y
+            
+toZipper :: Int -> [a] -> ([a], a, [a])
+toZipper n (a:as) = iter n ([], a, as) where
+    iter 0 z                 = z
+    iter (m+1) (xs, y, z:zs) = iter m (y:xs,z,zs)
+    iter _ _                 = invalid
+toZipper _ _      = invalid
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    s:as -> case map read (words s) of
+        [_,_,x,y] -> case f (x,y,as) of
+            r -> [[r]]
+        _ -> invalid 
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

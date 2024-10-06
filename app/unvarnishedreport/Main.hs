@@ -30,19 +30,23 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
+type I = String
 type O = Int
 
-type Solver = () -> ()
+type Solver = (I,I) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (s,t) -> if
+        | s == t    -> 0
+        | otherwise -> case findIndices not (zipWith (==) s t) of
+            []  -> succ (min (length s) (length t))
+            n:_ -> succ n
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [s]:[t]:_ -> case f (s,t) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

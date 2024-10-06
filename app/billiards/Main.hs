@@ -30,19 +30,23 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
-type O = Int
+type I = Double
+type O = Double
 
-type Solver = () -> ()
+type Solver = (I,I,I,I) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (sx,sy,gx,gy) 
+        | sx == gx  -> sx
+        | otherwise -> u * sx + t * gx where
+            t = sy / (sy + gy)
+            u = 1 - t
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [sx,sy,gx,gy]:_ -> case f (sx,sy,gx,gy) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

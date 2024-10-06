@@ -28,21 +28,23 @@ import Data.Vector qualified as V
 import Debug.Trace qualified as Debug
 
 debug :: Bool
-debug = () /= ()
+debug = () == ()
 
 type I = Int
-type O = Int
+type O = String
 
-type Solver = () -> ()
+type Solver = (I,I,I) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (a,b,c)
+        | b < c     -> bool "No" "Yes" $ a < b || c < a
+        | otherwise -> bool "No" "Yes" $ a < b && c < a
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [a,b,c]:_ -> case f (a,b,c) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

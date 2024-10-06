@@ -31,18 +31,20 @@ debug :: Bool
 debug = () /= ()
 
 type I = Int
-type O = Int
+type O = String
 
-type Solver = () -> ()
+type Solver = I -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    n -> case show n of
+        s -> case dropWhileEnd ('0'==) s of
+            t -> bool "No" "Yes" (t == reverse t)
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [n]:_ -> case f n of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

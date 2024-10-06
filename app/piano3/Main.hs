@@ -9,6 +9,7 @@
 {-# LANGUAGE OverloadedRecordDot, NoFieldSelectors, DuplicateRecordFields #-}
 module Main where
 
+import Control.Arrow
 import Data.ByteString.Char8 qualified as B
 import Data.Maybe
 import Data.Ord
@@ -30,19 +31,21 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
+type I = String
 type O = Int
 
-type Solver = () -> ()
+type Solver = [(Int, I)] -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    as -> uncurry (+) $ phi *** phi $ partition (("L" ==) . snd) as where
+        phi xs = sum $ zipWith psi xs $ tail xs where
+            psi (a,_) (b,_) = abs (a-b)
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:as -> case f (map (first read . toTuple) as) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
@@ -60,10 +63,6 @@ class InterfaceForOJS a where
     showBs = B.unwords . map showB
     encode :: [[a]] -> B.ByteString
     encode = B.unlines . map showBs
-
-instance InterfaceForOJS B.ByteString where
-    readB = id
-    showB = id
 
 instance InterfaceForOJS Int where
     readB = readInt
