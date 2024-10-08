@@ -33,16 +33,25 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = I -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    s -> iter 1 s where
+        iter m = \ case
+            4 -> m+3
+            2 -> m+3
+            1 -> m+3
+            n | even n    -> iter (succ m) (n `div` 2)
+              | otherwise -> iter (succ m) (3 * n + 1)
+
+ss :: S.Set Int
+ss = S.fromList $ takeWhile (1000000 >=) $ iterate (2*) 1
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [s]:_ -> case f s of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
@@ -152,24 +161,6 @@ runLength = unfoldr phi
     phi []     = Nothing
     phi (x:xs) = case spanCount (x ==) xs of
       (m, zs) -> Just ((x, succ m) , zs)
-
-{- |
-無限リストの無限リストをマージする
--}
-merges :: Ord a => [[a]] -> [a]
-merges = foldr1 xmerge where
-    xmerge = \ case
-        !x:xs    -> \ case
-            ys        -> x : merge xs ys
-        _       -> invalid
-    merge = \ case
-        xxs@(x:xs) -> \ case
-            yys@(y:ys) -> case compare x y of
-                LT -> x : merge xs yys
-                EQ -> x : merge xs ys
-                GT -> y : merge xxs ys
-            _ -> invalid
-        _ -> invalid
 
 {- |
 >>> splitEvery 3 [0 .. 10]

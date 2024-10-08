@@ -9,6 +9,7 @@
 {-# LANGUAGE OverloadedRecordDot, NoFieldSelectors, DuplicateRecordFields #-}
 module Main where
 
+import Control.Arrow
 import Data.ByteString.Char8 qualified as B
 import Data.Maybe
 import Data.Ord
@@ -33,17 +34,17 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = ([I],[I]) -> [O]
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (ws,ks) -> sum . take 3 . sortBy (comparing Down) <$> [ws,ks]
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
-    _   -> error "wrap: invalid input format"
+    wks -> case f ((concat *** concat) (splitAt 10 wks)) of
+        rr -> [rr]
+
 
 main :: IO ()
 main = B.interact (encode . wrap solve . decode)

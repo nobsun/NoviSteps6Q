@@ -33,16 +33,27 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = ([I],[I]) -> [O]
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (ps,ks) -> case IM.fromList (zip ps [1..]) of
+        p2k     -> case IM.fromList (zip [1..] ps) of
+            k2p     -> IM.elems $ snd $ foldl phi (p2k,k2p) ks
+                where
+                    phi (pk,kp) k = case kp IM.!? k of
+                        Nothing -> invalid
+                        Just p | p == 2019 -> (pk,kp)
+                               | otherwise -> case pk IM.!? succ p of
+                            Nothing            -> case IM.insert (succ p) k (IM.delete p pk) of
+                                pk'                -> case IM.insert k (succ p) kp of
+                                    kp'                -> (pk',kp')
+                            Just _  -> (pk,kp)
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:xs:_:as:_ -> case f (xs,as) of
+        rr -> map (:[]) rr
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

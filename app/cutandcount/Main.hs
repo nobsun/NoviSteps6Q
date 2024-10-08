@@ -9,6 +9,7 @@
 {-# LANGUAGE OverloadedRecordDot, NoFieldSelectors, DuplicateRecordFields #-}
 module Main where
 
+import Control.Arrow
 import Data.ByteString.Char8 qualified as B
 import Data.Maybe
 import Data.Ord
@@ -30,19 +31,21 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
+type I = String
 type O = Int
 
-type Solver = () -> ()
+type Solver = I -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    s ->  maximum $ uncurry (zipWith g) $ (f . inits &&& f . tails) s where
+        f = map S.fromList
+        g = (S.size .) . S.intersection
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:[s]:_ -> case f s of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
@@ -152,24 +155,6 @@ runLength = unfoldr phi
     phi []     = Nothing
     phi (x:xs) = case spanCount (x ==) xs of
       (m, zs) -> Just ((x, succ m) , zs)
-
-{- |
-無限リストの無限リストをマージする
--}
-merges :: Ord a => [[a]] -> [a]
-merges = foldr1 xmerge where
-    xmerge = \ case
-        !x:xs    -> \ case
-            ys        -> x : merge xs ys
-        _       -> invalid
-    merge = \ case
-        xxs@(x:xs) -> \ case
-            yys@(y:ys) -> case compare x y of
-                LT -> x : merge xs yys
-                EQ -> x : merge xs ys
-                GT -> y : merge xxs ys
-            _ -> invalid
-        _ -> invalid
 
 {- |
 >>> splitEvery 3 [0 .. 10]

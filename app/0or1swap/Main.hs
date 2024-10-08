@@ -31,18 +31,19 @@ debug :: Bool
 debug = () /= ()
 
 type I = Int
-type O = Int
+type O = String
 
-type Solver = () -> ()
+type Solver = [I] -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    ps -> bool "NO" "YES" (m == 0 || m == 2) where
+        m = sum $ zipWith ((bool (0 :: Int) 1 .) . (/=)) [1..] ps
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    _:ps:_ -> case f ps of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
@@ -101,22 +102,6 @@ readDbl = read . B.unpack
 showDbl :: Double -> B.ByteString
 showDbl = B.pack . show
 
-{- Trace -}
-trace :: String -> a -> a
-trace | debug     = Debug.trace
-      | otherwise = const id
-
-traceShow :: Show a => a -> b -> b
-traceShow | debug     = Debug.traceShow
-          | otherwise = const id
-
-{- Error -}
-impossible :: a
-impossible = error "impossible"
-
-invalid :: a
-invalid = error "invalid input"
-
 {- Bonsai -}
 
 {- |
@@ -154,24 +139,6 @@ runLength = unfoldr phi
       (m, zs) -> Just ((x, succ m) , zs)
 
 {- |
-無限リストの無限リストをマージする
--}
-merges :: Ord a => [[a]] -> [a]
-merges = foldr1 xmerge where
-    xmerge = \ case
-        !x:xs    -> \ case
-            ys        -> x : merge xs ys
-        _       -> invalid
-    merge = \ case
-        xxs@(x:xs) -> \ case
-            yys@(y:ys) -> case compare x y of
-                LT -> x : merge xs yys
-                EQ -> x : merge xs ys
-                GT -> y : merge xxs ys
-            _ -> invalid
-        _ -> invalid
-
-{- |
 >>> splitEvery 3 [0 .. 10]
 [[0,1,2],[3,4,5],[6,7,8],[9,10]]
 -}
@@ -197,6 +164,7 @@ minform a (n,xs)
            b        =  a + 1 + n `div` 2
            m        = length us
 {- misc -}
+
 toTuple :: [a] -> (a,a)
 toTuple = \ case
     x:y:_ -> (x,y)
@@ -211,51 +179,9 @@ countif = iter 0
         iter a p (x:xs) = iter (bool a (succ a) (p x)) p xs
         iter a _ []     = a
 
-{- |
-リストの要素交換
->>> swapElems 2 5 [3,1,4,1,5,9,2,6,5]
-[3,1,9,1,5,4,2,6,5]
--}
-swapElems :: Int -> Int -> [a] -> [a]
-swapElems i j xs = case compare i j of
-    GT -> swapElems j i xs
-    EQ -> xs
-    LT -> case splitAt i xs of
-        (_,[])    -> error "swapElems: out of range"
-        (ys,z:zs) -> case splitAt (pred (j - i)) zs of
-            (_,[])    -> error "swapElems: out of range"
-            (us,v:vs) -> ys ++ v : (us ++ z : vs)
+invalid :: a
+invalid = error "invalid input"
 
-{- Sized List -}
-type SzL a = ([a], Int)
-
-nil :: SzL a
-nil = ([], 0)
-
-isNil :: SzL a -> Bool
-isNil = \ case
-    ([],_)   -> True
-    _        -> False
-
-
-cons :: a -> SzL a -> SzL a
-cons x (xs, n) = (x:xs, succ n)
-
-hd :: SzL a -> a
-hd = sizedList (error "hd: empty Sized List") const 
-
-tl :: SzL a -> SzL a
-tl = sizedList (error "tl: empty Sized List") (const id)
-
-singleton :: a -> SzL a
-singleton x = cons x nil
-
-sizedList :: b -> (a -> SzL a -> b) -> SzL a -> b
-sizedList y f xxs = case xxs of
-    ([],   _) -> y
-    (x:xs, n) -> f x (xs, pred n)
-
-size :: SzL a -> Int
-size = snd
-
-
+trace :: String -> a -> a
+trace | debug     = Debug.trace
+      | otherwise = const id

@@ -30,19 +30,31 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
-type O = Int
+type I = Char
+type O = String
 
-type Solver = () -> ()
+type Solver = [I] -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    s -> case map digitToInt s of
+        d:ds -> case [[o1,o2,o3] | o1 <- os, o2 <- os, o3 <- os] of
+            oss -> case zipWith (&) ds <$> oss of
+                rss -> case map ((,) <*> (d +) . sum) rss of
+                    ss -> case find ((7 ==) . snd) ss of
+                        Just (rs,7) -> concat (show d : map f rs) ++ "=7"
+                        _ -> invalid
+        _ -> invalid
+    where
+        os = [id, negate]
+        f = \ case
+            x | x < 0     -> show x
+              | otherwise -> '+':show x
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    s:_ -> case f s of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

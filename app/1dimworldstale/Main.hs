@@ -31,18 +31,21 @@ debug :: Bool
 debug = () /= ()
 
 type I = Int
-type O = Int
+type O = String
 
-type Solver = () -> ()
+type Solver = (I,I,[I],[I]) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (x,y,xs,ys) -> bool "War" "No War" 
+        $ x < y && maxxs < minys && x < minys && maxxs < y where
+            maxxs = maximum xs
+            minys = minimum ys
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [_,_,x,y]:xs:ys:_ -> case f (x,y,xs,ys) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
@@ -152,24 +155,6 @@ runLength = unfoldr phi
     phi []     = Nothing
     phi (x:xs) = case spanCount (x ==) xs of
       (m, zs) -> Just ((x, succ m) , zs)
-
-{- |
-無限リストの無限リストをマージする
--}
-merges :: Ord a => [[a]] -> [a]
-merges = foldr1 xmerge where
-    xmerge = \ case
-        !x:xs    -> \ case
-            ys        -> x : merge xs ys
-        _       -> invalid
-    merge = \ case
-        xxs@(x:xs) -> \ case
-            yys@(y:ys) -> case compare x y of
-                LT -> x : merge xs yys
-                EQ -> x : merge xs ys
-                GT -> y : merge xxs ys
-            _ -> invalid
-        _ -> invalid
 
 {- |
 >>> splitEvery 3 [0 .. 10]

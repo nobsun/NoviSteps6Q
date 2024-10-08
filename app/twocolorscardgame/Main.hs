@@ -30,19 +30,23 @@ import Debug.Trace qualified as Debug
 debug :: Bool
 debug = () /= ()
 
-type I = Int
+type I = String
 type O = Int
 
-type Solver = () -> ()
+type Solver = ([I],[I]) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (ss,ts) -> case (runLength (sort ss), runLength (sort ts)) of
+        (s,t) -> max 0 $ maximum $ f <$> s where
+            f (u,c) = c - fromMaybe 0 (lookup u t)
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [n]:rss -> case splitAt (read n) rss of
+        (sss, _:tss) -> case f (concat sss, concat tss) of
+            r -> [[r]]
+        _ -> invalid
     _   -> error "wrap: invalid input format"
 
 main :: IO ()

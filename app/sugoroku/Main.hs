@@ -33,16 +33,23 @@ debug = () /= ()
 type I = Int
 type O = Int
 
-type Solver = () -> ()
+type Solver = (I,[I],[I]) -> O
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (n,ns,ds) -> traceShow ds $ traceShow ns $ case listArray (1,n) ns of
+        arr       -> iter 0 1 ds where
+            iter c p mms
+                | p >= n    = c
+                | otherwise = case mms of
+                    m:ms | p+m >= n  -> succ c
+                         | otherwise -> iter (succ c) (p+m + arr ! (p+m)) ms
+                    _ -> invalid
 
 wrap :: Solver -> ([[I]] -> [[O]])
 wrap f = \ case
-    _:_ -> case f () of
-        _rr -> [[]]
+    [n,_]:rss -> case f (n,concat (take n rss), concat (drop n rss)) of
+        r -> [[r]]
     _   -> error "wrap: invalid input format"
 
 main :: IO ()
