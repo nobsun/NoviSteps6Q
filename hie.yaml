@@ -117,6 +117,12 @@ cradle:
     - path: "./app/append/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:append"
 
+    - path: "./app/arc019a/Main.hs"
+      component: "NoviSteps6Q:exe:arc019a"
+
+    - path: "./app/arc019a/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:arc019a"
+
     - path: "./app/aroundsquare/Main.hs"
       component: "NoviSteps6Q:exe:aroundsquare"
 
@@ -140,6 +146,12 @@ cradle:
 
     - path: "./app/atcodercondominium/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:atcodercondominium"
+
+    - path: "./app/avoidrookattack/Main.hs"
+      component: "NoviSteps6Q:exe:avoidrookattack"
+
+    - path: "./app/avoidrookattack/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:avoidrookattack"
 
     - path: "./app/balance/Main.hs"
       component: "NoviSteps6Q:exe:balance"
@@ -549,6 +561,12 @@ cradle:
     - path: "./app/jogging/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:jogging"
 
+    - path: "./app/kaprekarnumber/Main.hs"
+      component: "NoviSteps6Q:exe:kaprekarnumber"
+
+    - path: "./app/kaprekarnumber/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:kaprekarnumber"
+
     - path: "./app/keyencebuilding/Main.hs"
       component: "NoviSteps6Q:exe:keyencebuilding"
 
@@ -698,6 +716,12 @@ cradle:
 
     - path: "./app/overlappingsheets/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:overlappingsheets"
+
+    - path: "./app/pairing/Main.hs"
+      component: "NoviSteps6Q:exe:pairing"
+
+    - path: "./app/pairing/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:pairing"
 
     - path: "./app/palindromewithleadingzeros/Main.hs"
       component: "NoviSteps6Q:exe:palindromewithleadingzeros"
@@ -932,6 +956,12 @@ cradle:
 
     - path: "./app/stonemonument/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:stonemonument"
+
+    - path: "./app/strawberries/Main.hs"
+      component: "NoviSteps6Q:exe:strawberries"
+
+    - path: "./app/strawberries/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:strawberries"
 
     - path: "./app/stringpalindrome/Main.hs"
       component: "NoviSteps6Q:exe:stringpalindrome"

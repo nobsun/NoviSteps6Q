@@ -803,6 +803,45 @@ executable append
     , vector
   default-language: GHC2021
 
+executable arc019a
+  main-is: Main.hs
+  other-modules:
+      Paths_NoviSteps6Q
+  hs-source-dirs:
+      app/arc019a
+  default-extensions:
+      ImplicitParams
+      ImportQualifiedPost
+      LambdaCase
+      LexicalNegation
+      MultiWayIf
+      NPlusKPatterns
+      OverloadedStrings
+      DataKinds
+      PolyKinds
+      NoStarIsType
+      TypeFamilyDependencies
+      UndecidableInstances
+  ghc-options: -Wall -Wno-unticked-promoted-constructors -Wno-unused-imports -Wno-unused-top-binds -Wno-orphans -rtsopts
+  build-depends:
+      NoviSteps6Q
+    , aeson
+    , array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , doctest
+    , free
+    , gloss
+    , hspec
+    , main-tester
+    , recursion-schemes
+    , time
+    , unicode-show
+    , utf8-string
+    , vector
+  default-language: GHC2021
+
 executable aroundsquare
   main-is: Main.hs
   other-modules:
@@ -926,6 +965,45 @@ executable atcodercondominium
       Paths_NoviSteps6Q
   hs-source-dirs:
       app/atcodercondominium
+  default-extensions:
+      ImplicitParams
+      ImportQualifiedPost
+      LambdaCase
+      LexicalNegation
+      MultiWayIf
+      NPlusKPatterns
+      OverloadedStrings
+      DataKinds
+      PolyKinds
+      NoStarIsType
+      TypeFamilyDependencies
+      UndecidableInstances
+  ghc-options: -Wall -Wno-unticked-promoted-constructors -Wno-unused-imports -Wno-unused-top-binds -Wno-orphans -rtsopts
+  build-depends:
+      NoviSteps6Q
+    , aeson
+    , array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , doctest
+    , free
+    , gloss
+    , hspec
+    , main-tester
+    , recursion-schemes
+    , time
+    , unicode-show
+    , utf8-string
+    , vector
+  default-language: GHC2021
+
+executable avoidrookattack
+  main-is: Main.hs
+  other-modules:
+      Paths_NoviSteps6Q
+  hs-source-dirs:
+      app/avoidrookattack
   default-extensions:
       ImplicitParams
       ImportQualifiedPost
@@ -3611,6 +3689,45 @@ executable jogging
     , vector
   default-language: GHC2021
 
+executable kaprekarnumber
+  main-is: Main.hs
+  other-modules:
+      Paths_NoviSteps6Q
+  hs-source-dirs:
+      app/kaprekarnumber
+  default-extensions:
+      ImplicitParams
+      ImportQualifiedPost
+      LambdaCase
+      LexicalNegation
+      MultiWayIf
+      NPlusKPatterns
+      OverloadedStrings
+      DataKinds
+      PolyKinds
+      NoStarIsType
+      TypeFamilyDependencies
+      UndecidableInstances
+  ghc-options: -Wall -Wno-unticked-promoted-constructors -Wno-unused-imports -Wno-unused-top-binds -Wno-orphans -rtsopts
+  build-depends:
+      NoviSteps6Q
+    , aeson
+    , array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , doctest
+    , free
+    , gloss
+    , hspec
+    , main-tester
+    , recursion-schemes
+    , time
+    , unicode-show
+    , utf8-string
+    , vector
+  default-language: GHC2021
+
 executable keyencebuilding
   main-is: Main.hs
   other-modules:
@@ -4553,6 +4670,45 @@ executable overlappingsheets
       Paths_NoviSteps6Q
   hs-source-dirs:
       app/overlappingsheets
+  default-extensions:
+      ImplicitParams
+      ImportQualifiedPost
+      LambdaCase
+      LexicalNegation
+      MultiWayIf
+      NPlusKPatterns
+      OverloadedStrings
+      DataKinds
+      PolyKinds
+      NoStarIsType
+      TypeFamilyDependencies
+      UndecidableInstances
+  ghc-options: -Wall -Wno-unticked-promoted-constructors -Wno-unused-imports -Wno-unused-top-binds -Wno-orphans -rtsopts
+  build-depends:
+      NoviSteps6Q
+    , aeson
+    , array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , doctest
+    , free
+    , gloss
+    , hspec
+    , main-tester
+    , recursion-schemes
+    , time
+    , unicode-show
+    , utf8-string
+    , vector
+  default-language: GHC2021
+
+executable pairing
+  main-is: Main.hs
+  other-modules:
+      Paths_NoviSteps6Q
+  hs-source-dirs:
+      app/pairing
   default-extensions:
       ImplicitParams
       ImportQualifiedPost
@@ -6074,6 +6230,45 @@ executable stonemonument
       Paths_NoviSteps6Q
   hs-source-dirs:
       app/stonemonument
+  default-extensions:
+      ImplicitParams
+      ImportQualifiedPost
+      LambdaCase
+      LexicalNegation
+      MultiWayIf
+      NPlusKPatterns
+      OverloadedStrings
+      DataKinds
+      PolyKinds
+      NoStarIsType
+      TypeFamilyDependencies
+      UndecidableInstances
+  ghc-options: -Wall -Wno-unticked-promoted-constructors -Wno-unused-imports -Wno-unused-top-binds -Wno-orphans -rtsopts
+  build-depends:
+      NoviSteps6Q
+    , aeson
+    , array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , doctest
+    , free
+    , gloss
+    , hspec
+    , main-tester
+    , recursion-schemes
+    , time
+    , unicode-show
+    , utf8-string
+    , vector
+  default-language: GHC2021
+
+executable strawberries
+  main-is: Main.hs
+  other-modules:
+      Paths_NoviSteps6Q
+  hs-source-dirs:
+      app/strawberries
   default-extensions:
       ImplicitParams
       ImportQualifiedPost

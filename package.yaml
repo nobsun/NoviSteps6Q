@@ -63,6 +63,46 @@ library:
   source-dirs: src
 
 executables:
+  strawberries:
+    main:               Main.hs
+    source-dirs:        app/strawberries
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  arc019a:
+    main:               Main.hs
+    source-dirs:        app/arc019a
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  pairing:
+    main:               Main.hs
+    source-dirs:        app/pairing
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  avoidrookattack:
+    main:               Main.hs
+    source-dirs:        app/avoidrookattack
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  kaprekarnumber:
+    main:               Main.hs
+    source-dirs:        app/kaprekarnumber
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   towballs:
     main:               Main.hs
     source-dirs:        app/towballs
