@@ -513,6 +513,12 @@ cradle:
     - path: "./app/howmany/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:howmany"
 
+    - path: "./app/hurdleparsing/Main.hs"
+      component: "NoviSteps6Q:exe:hurdleparsing"
+
+    - path: "./app/hurdleparsing/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:hurdleparsing"
+
     - path: "./app/integerdivision/Main.hs"
       component: "NoviSteps6Q:exe:integerdivision"
 

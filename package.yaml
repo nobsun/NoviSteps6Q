@@ -63,6 +63,14 @@ library:
   source-dirs: src
 
 executables:
+  hurdleparsing:
+    main:               Main.hs
+    source-dirs:        app/hurdleparsing
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   strawberries:
     main:               Main.hs
     source-dirs:        app/strawberries
