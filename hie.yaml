@@ -147,6 +147,12 @@ cradle:
     - path: "./app/atcodercondominium/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:atcodercondominium"
 
+    - path: "./app/atcodertrump/Main.hs"
+      component: "NoviSteps6Q:exe:atcodertrump"
+
+    - path: "./app/atcodertrump/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:atcodertrump"
+
     - path: "./app/avoidrookattack/Main.hs"
       component: "NoviSteps6Q:exe:avoidrookattack"
 

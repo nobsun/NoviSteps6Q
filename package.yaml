@@ -63,6 +63,14 @@ library:
   source-dirs: src
 
 executables:
+  atcodertrump:
+    main:               Main.hs
+    source-dirs:        app/atcodertrump
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   hurdleparsing:
     main:               Main.hs
     source-dirs:        app/hurdleparsing
