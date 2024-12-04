@@ -9,6 +9,18 @@ cradle:
     - path: "./app/0or1swap/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:0or1swap"
 
+    - path: "./app/1122string/Main.hs"
+      component: "NoviSteps6Q:exe:1122string"
+
+    - path: "./app/1122string/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:1122string"
+
+    - path: "./app/11_22string/Main.hs"
+      component: "NoviSteps6Q:exe:11_22string"
+
+    - path: "./app/11_22string/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:11_22string"
+
     - path: "./app/124test/Main.hs"
       component: "NoviSteps6Q:exe:124test"
 

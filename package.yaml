@@ -63,6 +63,22 @@ library:
   source-dirs: src
 
 executables:
+  1122string:
+    main:               Main.hs
+    source-dirs:        app/1122string
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  11_22string:
+    main:               Main.hs
+    source-dirs:        app/11_22string
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   atcodertrump:
     main:               Main.hs
     source-dirs:        app/atcodertrump
