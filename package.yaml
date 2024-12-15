@@ -63,6 +63,38 @@ library:
   source-dirs: src
 
 executables:
+  humidifier:
+    main:               Main.hs
+    source-dirs:        app/humidifier
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  smartphoneaddiction:
+    main:               Main.hs
+    source-dirs:        app/smartphoneaddiction
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  bitoperationi:
+    main:               Main.hs
+    source-dirs:        app/bitoperationi
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  bitoperationii:
+    main:               Main.hs
+    source-dirs:        app/bitoperationii
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   1122string:
     main:               Main.hs
     source-dirs:        app/1122string

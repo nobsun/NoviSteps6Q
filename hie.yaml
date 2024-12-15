@@ -219,6 +219,18 @@ cradle:
     - path: "./app/bitaroandioi/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:bitaroandioi"
 
+    - path: "./app/bitoperationi/Main.hs"
+      component: "NoviSteps6Q:exe:bitoperationi"
+
+    - path: "./app/bitoperationi/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:bitoperationi"
+
+    - path: "./app/bitoperationii/Main.hs"
+      component: "NoviSteps6Q:exe:bitoperationii"
+
+    - path: "./app/bitoperationii/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:bitoperationii"
+
     - path: "./app/bitwisexor/Main.hs"
       component: "NoviSteps6Q:exe:bitwisexor"
 
@@ -530,6 +542,12 @@ cradle:
 
     - path: "./app/howmany/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:howmany"
+
+    - path: "./app/humidifier/Main.hs"
+      component: "NoviSteps6Q:exe:humidifier"
+
+    - path: "./app/humidifier/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:humidifier"
 
     - path: "./app/hurdleparsing/Main.hs"
       component: "NoviSteps6Q:exe:hurdleparsing"
@@ -944,6 +962,12 @@ cradle:
 
     - path: "./app/smallandlargeintergers/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:smallandlargeintergers"
+
+    - path: "./app/smartphoneaddiction/Main.hs"
+      component: "NoviSteps6Q:exe:smartphoneaddiction"
+
+    - path: "./app/smartphoneaddiction/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:smartphoneaddiction"
 
     - path: "./app/snaketoy/Main.hs"
       component: "NoviSteps6Q:exe:snaketoy"
