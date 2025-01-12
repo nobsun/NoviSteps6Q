@@ -279,6 +279,12 @@ cradle:
     - path: "./app/cakesanddonuts/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:cakesanddonuts"
 
+    - path: "./app/calculator/Main.hs"
+      component: "NoviSteps6Q:exe:calculator"
+
+    - path: "./app/calculator/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:calculator"
+
     - path: "./app/calltheidnumber/Main.hs"
       component: "NoviSteps6Q:exe:calltheidnumber"
 
@@ -482,6 +488,12 @@ cradle:
 
     - path: "./app/fullhouse/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:fullhouse"
+
+    - path: "./app/fullhouse2/Main.hs"
+      component: "NoviSteps6Q:exe:fullhouse2"
+
+    - path: "./app/fullhouse2/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:fullhouse2"
 
     - path: "./app/gentlepairs/Main.hs"
       component: "NoviSteps6Q:exe:gentlepairs"

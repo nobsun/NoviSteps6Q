@@ -63,6 +63,22 @@ library:
   source-dirs: src
 
 executables:
+  fullhouse2:
+    main:               Main.hs
+    source-dirs:        app/fullhouse2
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  calculator:
+    main:               Main.hs
+    source-dirs:        app/calculator
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   humidifier:
     main:               Main.hs
     source-dirs:        app/humidifier
