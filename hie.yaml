@@ -1083,6 +1083,12 @@ cradle:
     - path: "./app/taro/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:taro"
 
+    - path: "./app/tcaf/Main.hs"
+      component: "NoviSteps6Q:exe:tcaf"
+
+    - path: "./app/tcaf/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:tcaf"
+
     - path: "./app/tetrahedralnumber/Main.hs"
       component: "NoviSteps6Q:exe:tetrahedralnumber"
 
