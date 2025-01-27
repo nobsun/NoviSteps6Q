@@ -63,6 +63,14 @@ library:
   source-dirs: src
 
 executables:
+  12435:
+    main:               Main.hs
+    source-dirs:        app/12435
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   tcaf:
     main:               Main.hs
     source-dirs:        app/tcaf
