@@ -93,6 +93,24 @@ cradle:
     - path: "./app/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:NoviSteps6Q"
 
+    - path: "./app/abc023b/Main.hs"
+      component: "NoviSteps6Q:exe:abc023b"
+
+    - path: "./app/abc023b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc023b"
+
+    - path: "./app/abc392b/Main.hs"
+      component: "NoviSteps6Q:exe:abc392b"
+
+    - path: "./app/abc392b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc392b"
+
+    - path: "./app/abc393b/Main.hs"
+      component: "NoviSteps6Q:exe:abc393b"
+
+    - path: "./app/abc393b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc393b"
+
     - path: "./app/abcdefg/Main.hs"
       component: "NoviSteps6Q:exe:abcdefg"
 
