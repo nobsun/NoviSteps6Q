@@ -93,11 +93,29 @@ cradle:
     - path: "./app/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:NoviSteps6Q"
 
+    - path: "./app/abc019b/Main.hs"
+      component: "NoviSteps6Q:exe:abc019b"
+
+    - path: "./app/abc019b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc019b"
+
     - path: "./app/abc023b/Main.hs"
       component: "NoviSteps6Q:exe:abc023b"
 
     - path: "./app/abc023b/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:abc023b"
+
+    - path: "./app/abc025a/Main.hs"
+      component: "NoviSteps6Q:exe:abc025a"
+
+    - path: "./app/abc025a/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc025a"
+
+    - path: "./app/abc025b/Main.hs"
+      component: "NoviSteps6Q:exe:abc025b"
+
+    - path: "./app/abc025b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc025b"
 
     - path: "./app/abc392b/Main.hs"
       component: "NoviSteps6Q:exe:abc392b"
@@ -110,6 +128,12 @@ cradle:
 
     - path: "./app/abc393b/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:abc393b"
+
+    - path: "./app/abc403b/Main.hs"
+      component: "NoviSteps6Q:exe:abc403b"
+
+    - path: "./app/abc403b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc403b"
 
     - path: "./app/abcdefg/Main.hs"
       component: "NoviSteps6Q:exe:abcdefg"
@@ -152,6 +176,12 @@ cradle:
 
     - path: "./app/append/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:append"
+
+    - path: "./app/arc004a/Main.hs"
+      component: "NoviSteps6Q:exe:arc004a"
+
+    - path: "./app/arc004a/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:arc004a"
 
     - path: "./app/arc019a/Main.hs"
       component: "NoviSteps6Q:exe:arc019a"
@@ -674,6 +704,18 @@ cradle:
 
     - path: "./app/longestpalindrome/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:longestpalindrome"
+
+    - path: "./app/maa091/Main.hs"
+      component: "NoviSteps6Q:exe:maa091"
+
+    - path: "./app/maa091/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:maa091"
+
+    - path: "./app/maa092/Main.hs"
+      component: "NoviSteps6Q:exe:maa092"
+
+    - path: "./app/maa092/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:maa092"
 
     - path: "./app/maintainmultiplesequences/Main.hs"
       component: "NoviSteps6Q:exe:maintainmultiplesequences"
