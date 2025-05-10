@@ -63,6 +63,14 @@ library:
   source-dirs: src
 
 executables:
+  arc038a:
+    main:               Main.hs
+    source-dirs:        app/arc038a
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   arc004a:
     main:               Main.hs
     source-dirs:        app/arc004a
