@@ -63,6 +63,86 @@ library:
   source-dirs: src
 
 executables:
+  joi2026yo1ad:
+    main:               Main.hs
+    source-dirs:        app/joi2026yo1ad
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  joi2025yo1cd:
+    main:               Main.hs
+    source-dirs:        app/joi2025yo1cd
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  joi2025yo1bd:
+    main:               Main.hs
+    source-dirs:        app/joi2025yo1bd
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  joi2018yob:
+    main:               Main.hs
+    source-dirs:        app/joi2018yob
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  joi2017yoc:
+    main:               Main.hs
+    source-dirs:        app/joi2017yoc
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  joi2016yob:
+    main:               Main.hs
+    source-dirs:        app/joi2016yob
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  joi2014yob:
+    main:               Main.hs
+    source-dirs:        app/joi2014yob
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  joi2011yob:
+    main:               Main.hs
+    source-dirs:        app/joi2011yob
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  codethanksfes2017a:
+    main:               Main.hs
+    source-dirs:        app/codethanksfes2017a
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc410b:
+    main:               Main.hs
+    source-dirs:        app/abc410b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   arc038a:
     main:               Main.hs
     source-dirs:        app/arc038a

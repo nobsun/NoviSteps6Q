@@ -135,6 +135,12 @@ cradle:
     - path: "./app/abc403b/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:abc403b"
 
+    - path: "./app/abc410b/Main.hs"
+      component: "NoviSteps6Q:exe:abc410b"
+
+    - path: "./app/abc410b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc410b"
+
     - path: "./app/abcdefg/Main.hs"
       component: "NoviSteps6Q:exe:abcdefg"
 
@@ -374,6 +380,12 @@ cradle:
 
     - path: "./app/choosecards1/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:choosecards1"
+
+    - path: "./app/codethanksfes2017a/Main.hs"
+      component: "NoviSteps6Q:exe:codethanksfes2017a"
+
+    - path: "./app/codethanksfes2017a/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:codethanksfes2017a"
 
     - path: "./app/coins/Main.hs"
       component: "NoviSteps6Q:exe:coins"
@@ -674,6 +686,54 @@ cradle:
 
     - path: "./app/jogging/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:jogging"
+
+    - path: "./app/joi2011yob/Main.hs"
+      component: "NoviSteps6Q:exe:joi2011yob"
+
+    - path: "./app/joi2011yob/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:joi2011yob"
+
+    - path: "./app/joi2014yob/Main.hs"
+      component: "NoviSteps6Q:exe:joi2014yob"
+
+    - path: "./app/joi2014yob/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:joi2014yob"
+
+    - path: "./app/joi2016yob/Main.hs"
+      component: "NoviSteps6Q:exe:joi2016yob"
+
+    - path: "./app/joi2016yob/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:joi2016yob"
+
+    - path: "./app/joi2017yoc/Main.hs"
+      component: "NoviSteps6Q:exe:joi2017yoc"
+
+    - path: "./app/joi2017yoc/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:joi2017yoc"
+
+    - path: "./app/joi2018yob/Main.hs"
+      component: "NoviSteps6Q:exe:joi2018yob"
+
+    - path: "./app/joi2018yob/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:joi2018yob"
+
+    - path: "./app/joi2025yo1bd/Main.hs"
+      component: "NoviSteps6Q:exe:joi2025yo1bd"
+
+    - path: "./app/joi2025yo1bd/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:joi2025yo1bd"
+
+    - path: "./app/joi2025yo1cd/Main.hs"
+      component: "NoviSteps6Q:exe:joi2025yo1cd"
+
+    - path: "./app/joi2025yo1cd/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:joi2025yo1cd"
+
+    - path: "./app/joi2026yo1ad/Main.hs"
+      component: "NoviSteps6Q:exe:joi2026yo1ad"
+
+    - path: "./app/joi2026yo1ad/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:joi2026yo1ad"
 
     - path: "./app/kaprekarnumber/Main.hs"
       component: "NoviSteps6Q:exe:kaprekarnumber"
