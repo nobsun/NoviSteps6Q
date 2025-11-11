@@ -44,26 +44,30 @@ base = 10^(9::Int) + 7
 factCacheSize :: Int
 factCacheSize = 4 * 10 ^! 6
 
-type I = Int
-type O = Int
+type I = String
+type O = String
 
-type Dom   = ()
-type Codom = ()
+type Dom   = I
+type Codom = O
 
 type Solver = Dom -> Codom
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    s -> bool "NO" "YES" (choku s) where
+        choku = \ case
+            [] -> True
+            'c':'h':rs -> choku rs
+            c:rs       -> elem c ("oku" :: String) && choku rs
 
 decode :: [[I]] -> Dom
 decode = \ case
-    _:_ -> ()
+    [s]:_ -> s
     _   -> invalid $ "toDom: " ++ show @Int __LINE__
 
 encode :: Codom -> [[O]]
 encode = \ case
-    _rr -> [[]]
+    r -> [[r]]
 
 main :: IO ()
 main = B.interact (detokenize . encode . solve . decode . entokenize)

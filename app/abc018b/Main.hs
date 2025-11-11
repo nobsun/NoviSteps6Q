@@ -44,26 +44,31 @@ base = 10^(9::Int) + 7
 factCacheSize :: Int
 factCacheSize = 4 * 10 ^! 6
 
-type I = Int
-type O = Int
+type I = String
+type O = String
 
-type Dom   = ()
-type Codom = ()
+type Dom   = (I,[(Int,Int)])
+type Codom = O
 
 type Solver = Dom -> Codom
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (s,qs) -> foldl' ope s qs
+
+ope :: String -> (Int,Int) -> String
+ope s (x,y) = case splitAt (succ y) s of
+    (qs,rs) -> case splitAt x qs of
+        (ps,qs') -> ps ++ foldl' (flip (:)) rs qs'
 
 decode :: [[I]] -> Dom
 decode = \ case
-    _:_ -> ()
+    [s]:_:qs -> (s, toTuple . map (pred . read) <$> qs)
     _   -> invalid $ "toDom: " ++ show @Int __LINE__
 
 encode :: Codom -> [[O]]
 encode = \ case
-    _rr -> [[]]
+    r -> [[r]]
 
 main :: IO ()
 main = B.interact (detokenize . encode . solve . decode . entokenize)

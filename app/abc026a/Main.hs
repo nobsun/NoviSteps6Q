@@ -47,23 +47,23 @@ factCacheSize = 4 * 10 ^! 6
 type I = Int
 type O = Int
 
-type Dom   = ()
-type Codom = ()
+type Dom   = I
+type Codom = O
 
 type Solver = Dom -> Codom
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    a -> (a `div` 2) ^! 2
 
 decode :: [[I]] -> Dom
 decode = \ case
-    _:_ -> ()
+    [a]:_ -> a
     _   -> invalid $ "toDom: " ++ show @Int __LINE__
 
 encode :: Codom -> [[O]]
 encode = \ case
-    _rr -> [[]]
+    r -> [[r]]
 
 main :: IO ()
 main = B.interact (detokenize . encode . solve . decode . entokenize)

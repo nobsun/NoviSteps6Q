@@ -63,6 +63,110 @@ library:
   source-dirs: src
 
 executables:
+  abc037b:
+    main:               Main.hs
+    source-dirs:        app/abc037b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc026a:
+    main:               Main.hs
+    source-dirs:        app/abc026a
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc026b:
+    main:               Main.hs
+    source-dirs:        app/abc026b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc024b:
+    main:               Main.hs
+    source-dirs:        app/abc024b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc018b:
+    main:               Main.hs
+    source-dirs:        app/abc018b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc017b:
+    main:               Main.hs
+    source-dirs:        app/abc017b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc012c:
+    main:               Main.hs
+    source-dirs:        app/abc012c
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc010b:
+    main:               Main.hs
+    source-dirs:        app/abc010b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc422b:
+    main:               Main.hs
+    source-dirs:        app/abc422b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc010c:
+    main:               Main.hs
+    source-dirs:        app/abc010c
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc009b:
+    main:               Main.hs
+    source-dirs:        app/abc009b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  abc004b:
+    main:               Main.hs
+    source-dirs:        app/abc004b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
+  joig2022b:
+    main:               Main.hs
+    source-dirs:        app/joig2022b
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps6Q
+
   joi2026yo1ad:
     main:               Main.hs
     source-dirs:        app/joi2026yo1ad

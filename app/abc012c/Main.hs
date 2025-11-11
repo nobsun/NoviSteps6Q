@@ -45,25 +45,33 @@ factCacheSize :: Int
 factCacheSize = 4 * 10 ^! 6
 
 type I = Int
-type O = Int
+type O = String
 
-type Dom   = ()
-type Codom = ()
+type Dom   = I
+type Codom = [O]
 
 type Solver = Dom -> Codom
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    n -> pr <$> lookups (s - n) where
+        pr (x,y) = unwords $ [show x, "x", show y]
+        s = sum $ fst <$> tbl
+
+tbl :: [(Int,(Int,Int))]
+tbl = [ (a * b, (a,b)) | a <- [1 .. 9], b <- [1 .. 9]]
+
+lookups :: Int -> [(Int,Int)]
+lookups x = [ v | (k,v) <- tbl, k == x ]
 
 decode :: [[I]] -> Dom
 decode = \ case
-    _:_ -> ()
+    [n]:_ -> n
     _   -> invalid $ "toDom: " ++ show @Int __LINE__
 
 encode :: Codom -> [[O]]
 encode = \ case
-    _rr -> [[]]
+    rr -> singleton <$> rr
 
 main :: IO ()
 main = B.interact (detokenize . encode . solve . decode . entokenize)

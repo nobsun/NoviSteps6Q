@@ -47,23 +47,31 @@ factCacheSize = 4 * 10 ^! 6
 type I = Int
 type O = Int
 
-type Dom   = ()
-type Codom = ()
+type Dom   = [I]
+type Codom = O
 
 type Solver = Dom -> Codom
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    as -> sum (map phi as) where
+        phi a = case mod a 2 of
+            0     -> case mod (pred a) 3 of
+                0     -> 1
+                1     -> 1
+                _     -> 3
+            _     -> case mod a 3 of
+                2     -> 2
+                _     -> 0
 
 decode :: [[I]] -> Dom
 decode = \ case
-    _:_ -> ()
+    _:as:_ -> as
     _   -> invalid $ "toDom: " ++ show @Int __LINE__
 
 encode :: Codom -> [[O]]
 encode = \ case
-    _rr -> [[]]
+    r -> [[r]]
 
 main :: IO ()
 main = B.interact (detokenize . encode . solve . decode . entokenize)

@@ -47,23 +47,27 @@ factCacheSize = 4 * 10 ^! 6
 type I = Int
 type O = Int
 
-type Dom   = ()
-type Codom = ()
+type Dom   = (I,[[I]])
+type Codom = [O]
 
 type Solver = Dom -> Codom
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (n,lrts) -> elems $ accumArray (const id) 0 (1,n) $ concatMap phi lrts
+        where
+            phi = \ case
+                [l,r,t] -> map (,t) [l .. r]
+                _       -> invalid ""
 
 decode :: [[I]] -> Dom
 decode = \ case
-    _:_ -> ()
+    [n,_]:lrts -> (n,lrts)
     _   -> invalid $ "toDom: " ++ show @Int __LINE__
 
 encode :: Codom -> [[O]]
 encode = \ case
-    _rr -> [[]]
+    rr -> map singleton rr
 
 main :: IO ()
 main = B.interact (detokenize . encode . solve . decode . entokenize)

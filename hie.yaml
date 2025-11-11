@@ -93,6 +93,48 @@ cradle:
     - path: "./app/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:NoviSteps6Q"
 
+    - path: "./app/abc004b/Main.hs"
+      component: "NoviSteps6Q:exe:abc004b"
+
+    - path: "./app/abc004b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc004b"
+
+    - path: "./app/abc009b/Main.hs"
+      component: "NoviSteps6Q:exe:abc009b"
+
+    - path: "./app/abc009b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc009b"
+
+    - path: "./app/abc010b/Main.hs"
+      component: "NoviSteps6Q:exe:abc010b"
+
+    - path: "./app/abc010b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc010b"
+
+    - path: "./app/abc010c/Main.hs"
+      component: "NoviSteps6Q:exe:abc010c"
+
+    - path: "./app/abc010c/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc010c"
+
+    - path: "./app/abc012c/Main.hs"
+      component: "NoviSteps6Q:exe:abc012c"
+
+    - path: "./app/abc012c/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc012c"
+
+    - path: "./app/abc017b/Main.hs"
+      component: "NoviSteps6Q:exe:abc017b"
+
+    - path: "./app/abc017b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc017b"
+
+    - path: "./app/abc018b/Main.hs"
+      component: "NoviSteps6Q:exe:abc018b"
+
+    - path: "./app/abc018b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc018b"
+
     - path: "./app/abc019b/Main.hs"
       component: "NoviSteps6Q:exe:abc019b"
 
@@ -105,6 +147,12 @@ cradle:
     - path: "./app/abc023b/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:abc023b"
 
+    - path: "./app/abc024b/Main.hs"
+      component: "NoviSteps6Q:exe:abc024b"
+
+    - path: "./app/abc024b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc024b"
+
     - path: "./app/abc025a/Main.hs"
       component: "NoviSteps6Q:exe:abc025a"
 
@@ -116,6 +164,24 @@ cradle:
 
     - path: "./app/abc025b/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:abc025b"
+
+    - path: "./app/abc026a/Main.hs"
+      component: "NoviSteps6Q:exe:abc026a"
+
+    - path: "./app/abc026a/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc026a"
+
+    - path: "./app/abc026b/Main.hs"
+      component: "NoviSteps6Q:exe:abc026b"
+
+    - path: "./app/abc026b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc026b"
+
+    - path: "./app/abc037b/Main.hs"
+      component: "NoviSteps6Q:exe:abc037b"
+
+    - path: "./app/abc037b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc037b"
 
     - path: "./app/abc392b/Main.hs"
       component: "NoviSteps6Q:exe:abc392b"
@@ -140,6 +206,12 @@ cradle:
 
     - path: "./app/abc410b/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:abc410b"
+
+    - path: "./app/abc422b/Main.hs"
+      component: "NoviSteps6Q:exe:abc422b"
+
+    - path: "./app/abc422b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:abc422b"
 
     - path: "./app/abcdefg/Main.hs"
       component: "NoviSteps6Q:exe:abcdefg"
@@ -734,6 +806,12 @@ cradle:
 
     - path: "./app/joi2026yo1ad/Paths_NoviSteps6Q.hs"
       component: "NoviSteps6Q:exe:joi2026yo1ad"
+
+    - path: "./app/joig2022b/Main.hs"
+      component: "NoviSteps6Q:exe:joig2022b"
+
+    - path: "./app/joig2022b/Paths_NoviSteps6Q.hs"
+      component: "NoviSteps6Q:exe:joig2022b"
 
     - path: "./app/kaprekarnumber/Main.hs"
       component: "NoviSteps6Q:exe:kaprekarnumber"

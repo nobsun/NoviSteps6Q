@@ -44,26 +44,33 @@ base = 10^(9::Int) + 7
 factCacheSize :: Int
 factCacheSize = 4 * 10 ^! 6
 
-type I = Int
-type O = Int
+type I = Double
+type O = String
 
-type Dom   = ()
-type Codom = ()
+type Dom   = ((I,I),(I,I),I,I,[(I,I)])
+type Codom = O
 
 type Solver = Dom -> Codom
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    ((txa,tya),(txb,tyb),t,v,xys) -> bool "NO" "YES" (any p xys) where
+        p (x,y) = t * v >= dist (x,y) (txa,tya) + dist (x,y) (txb,tyb)
+
+dist :: (I,I) -> (I,I) -> I
+dist (xa,ya) (xb,yb) = sqrt (sqr (xa - xb) + sqr (ya - yb))
+
+sqr :: I -> I
+sqr x = x * x
 
 decode :: [[I]] -> Dom
 decode = \ case
-    _:_ -> ()
+    [txa,tya,txb,tyb,t,v]:_:xys -> ((txa,tya),(txb,tyb),t,v,map toTuple xys)
     _   -> invalid $ "toDom: " ++ show @Int __LINE__
 
 encode :: Codom -> [[O]]
 encode = \ case
-    _rr -> [[]]
+    r -> [[r]]
 
 main :: IO ()
 main = B.interact (detokenize . encode . solve . decode . entokenize)

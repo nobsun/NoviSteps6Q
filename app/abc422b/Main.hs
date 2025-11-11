@@ -1,6 +1,5 @@
 {-# LANGUAGE CPP #-}
 {-# LANGUAGE GHC2021 #-}
-{-# LANGUAGE ImplicitParams #-}
 {-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE LexicalNegation #-}
 {-# LANGUAGE LambdaCase, MultiWayIf #-}
@@ -17,7 +16,6 @@ import Control.Arrow
 import Control.Applicative
 import Control.Monad
 import Data.Array
-import Data.Array.Unboxed qualified as A
 import Data.Bits
 import Data.Bool
 import Data.Char
@@ -31,7 +29,7 @@ import Data.Map qualified as M
 import Data.Set qualified as S
 import Data.Tree qualified as T
 import Data.Sequence qualified as Q
-import Data.Vector.Unboxed qualified as V
+import Data.Vector qualified as V
 
 import Debug.Trace qualified as Debug
 
@@ -44,26 +42,32 @@ base = 10^(9::Int) + 7
 factCacheSize :: Int
 factCacheSize = 4 * 10 ^! 6
 
-type I = Int
-type O = Int
+type I = String
+type O = String
 
-type Dom   = ()
-type Codom = ()
+type Dom   = (Int,Int,[I])
+type Codom = O
 
 type Solver = Dom -> Codom
 
 solve :: Solver
 solve = \ case
-    () -> ()
+    (h,w,ss) -> bool "No" "Yes" $ and $ zipWith phi as ns
+        where
+            !aa = listArray ((1,1),(h,w)) (concat ss)
+            !na = neighbors4Array ((== '#'), aa)
+            as = elems aa
+            ns = elems na
+            phi c s = c == '.' || S.size s == 2 || S.size s == 4
 
 decode :: [[I]] -> Dom
 decode = \ case
-    _:_ -> ()
+    [h,w]:ss -> (read h, read w, concat ss)
     _   -> invalid $ "toDom: " ++ show @Int __LINE__
 
 encode :: Codom -> [[O]]
 encode = \ case
-    _rr -> [[]]
+    r -> [[r]]
 
 main :: IO ()
 main = B.interact (detokenize . encode . solve . decode . entokenize)
@@ -102,23 +106,16 @@ instance AsToken Integer where
 instance AsToken String where
     readB :: B.ByteString -> String
     readB = readStr
-    showB :: String -> B.ByteString
     showB = showStr
 
 instance AsToken Double where
-    readB :: B.ByteString -> Double
     readB = readDbl
-    showB :: Double -> B.ByteString
     showB = showDbl
 
 instance AsToken Char where
-    readB :: B.ByteString -> Char
     readB = B.head
-    showB :: Char -> B.ByteString
     showB = B.singleton
-    readBs :: B.ByteString -> [Char]
     readBs = B.unpack
-    showBs :: [Char] -> B.ByteString
     showBs = B.pack
 
 readInt :: B.ByteString -> Int
@@ -385,15 +382,6 @@ fromTriple :: (a,a,a) -> [a]
 fromTriple = \ case
     (x,y,z) -> [x,y,z]
 
-fst3 :: (a,b,c) -> a
-fst3 (x,_,_) = x
-
-snd3 :: (a,b,c) -> b
-snd3 (_,y,_) = y
-
-thd3 :: (a,b,c) -> c
-thd3 (_,_,z) = z
-
 {- counting -}
 countif :: (a -> Bool) -> [a] -> Int
 countif = iter 0
@@ -489,8 +477,8 @@ neighbors4 (ij0@(i0,j0),hw@(h,w)) = \ case
         | i  == h      -> filter p [second pred ij, second succ ij, first pred ij               ]
         | j  == w      -> filter p [second pred ij,                 first pred ij, first succ ij]
         | otherwise    -> filter p [second pred ij, second succ ij, first pred ij, first succ ij]
-    where
-        p (x,y) = and [i0 <= x, x <= h, j0 <= y, y <= w]
+        where
+            p (x,y) = x >= i0 && x <= h && y >= j0 && y <= w
 
 neighbors4Array :: (Ix i, Enum i) => (a -> Bool, Array (i,i) a) -> Array (i,i) (S.Set (i,i))
 neighbors4Array (p,a) = listArray (bounds a) (S.fromList . filter (p . (a !)) . neighbors4 (bounds a) <$> range (bounds a))
@@ -675,132 +663,3 @@ selectPat = \ case
         _:ys    -> selectPat bs ys
         _       -> []
     _       -> const []
-
-{- Thining -}
-
-thinBy :: (a -> a -> Bool) -> [a] -> [a]
-thinBy cmp = foldr bump []
-    where
-        bump x = \ case
-            []   -> singleton x
-            y:ys
-                | x `cmp` y -> x : ys
-                | y `cmp` x -> y : ys
-                | otherwise -> x:y:ys
-
-{- 0/1 knapsack problem -}
-
-type KsName       = String
-type KsValue      = Int
-type KsWeight     = Int
-type KsItem       = (KsValue, KsWeight)
-type KsItem3      = (KsName, KsValue, KsWeight)
-type KsSelection3 = ([KsName], KsValue, KsWeight)
-
-swag :: (?ksArray0 :: A.UArray KsWeight KsValue)
-     => KsWeight -> [(KsWeight, KsValue)] -> KsValue
-swag w = maximum . A.elems . ksValues w
-
-ksValues :: (?ksArray0 :: A.UArray KsWeight KsValue)
-         => KsWeight -> [(KsWeight, KsValue)] -> A.UArray KsWeight KsValue
-ksValues ubw = foldl' step ?ksArray0 where
-    step aa (w,v) = A.accum max aa [(r1, s + v) | (r,s) <- A.assocs aa, let r1 = r + w, r1 <= ubw]
-
-ksName :: KsItem3 -> KsName
-ksName = fst3
-
-ksValue :: (a,KsValue,KsWeight) -> KsValue
-ksValue = snd3
-
-ksWeight :: (a,KsValue,KsWeight) -> KsWeight
-ksWeight = thd3
-
-{- |
->>> itemList = [("Laptop",30,14)::(KsName,KsValue,KsWeight),("Television",67,31),("Jewellery",19,8),("CD Collection",50,24)]
->>> a0 = listArray (0,50) (repeat ([],0,0)) :: Array KsWeight KsSelection3
->>> let {?addName = (:); ?ksSelectionArray0 = a0} in swagDP 50 itemList
-(["CD Collection","Jewellery","Laptop"],99,46)
--}
-swagDP :: ( ?addName :: KsName -> [KsName] -> [KsName]
-          , ?ksSelectionArray0 :: Array KsWeight KsSelection3 )
-       => KsWeight -> [KsItem3] -> KsSelection3
-swagDP w = maxWith ksValue . elems . ksSelections w
-
-ksSelections :: ( ?addName :: KsName -> [KsName] -> [KsName]
-                , ?ksSelectionArray0 :: Array KsWeight KsSelection3 )
-             => KsWeight -> [KsItem3] -> Array KsWeight KsSelection3
-ksSelections ubw = foldl' step ?ksSelectionArray0 where
-    step aa (n,v,w) = accum better aa
-                    [ (r1, (?addName n (fst3 s), v + ksValue s, w + ksWeight s))
-                    | (r,s) <- assocs aa, let r1 = r + w, r1 <= ubw]
-    better sn1 sn2 = if ksValue sn1 >= ksValue sn2 then sn1 else sn2
-
-swagDPA :: (?addName :: KsName -> [KsName] -> [KsName])
-        => KsWeight -> [KsItem3] -> KsSelection3
-swagDPA w items = aa ! w
-    where
-        aa :: Array KsWeight KsSelection3
-        aa = ksSelectionsA w items
-        
-ksSelectionsA :: (?addName :: KsName -> [KsName] -> [KsName])
-              => KsWeight -> [KsItem3] -> Array KsWeight KsSelection3
-ksSelectionsA w = foldr step start 
-    where
-        start :: Array KsWeight KsSelection3
-        start = accumArray undefined ([],0,0) (0,w) []
-
-        step :: (?addName :: KsName -> [KsName] -> [KsName])
-             => KsItem3 
-             -> Array KsWeight KsSelection3 
-             -> Array KsWeight KsSelection3
-        step i a = fmap phi a0
-            where
-                phi = \ case
-                    j | j < wi    -> a ! j
-                      | otherwise -> better (a ! j) (add i (a ! (j - wi)))
-                wi = ksWeight i
-
-        better :: KsSelection3 -> KsSelection3 -> KsSelection3
-        better sn1 sn2 = if ksValue sn1 >= ksValue sn2 then sn1 else sn2
-
-        a0 :: Array KsWeight KsWeight
-        a0 = listArray (0,w) [0 .. w]
-
-        add :: (?addName :: KsName -> [KsName] -> [KsName])
-            => KsItem3 -> KsSelection3 -> KsSelection3
-        add i (!ns,v,w0) 
-            = (?addName (ksName i) ns, ksValue i + v, ksWeight i + w0)
-
-swagTn :: KsWeight -> [KsItem3] -> KsSelection3
-swagTn w = maxWith ksValue . foldr tstep [([], 0, 0)]
-    where
-        tstep :: KsItem3 -> [KsSelection3] -> [KsSelection3]
-        tstep i = thinBy rel . mergeBy cmp . map (extend i)
-
-        extend :: KsItem3 -> KsSelection3 -> [KsSelection3]
-        extend i sn = filter (within w) [sn, add i sn]
-
-        within :: KsWeight -> KsSelection3 -> Bool
-        within w0 = (w0 >=) . ksWeight 
-
-        cmp :: KsSelection3 -> KsSelection3 -> Bool
-        cmp sn1 sn2 = ksWeight sn1 <= ksWeight sn2
-        
-        add :: KsItem3 -> KsSelection3 -> KsSelection3
-        add i (ns,v,w0) = (ksName i : ns, ksValue i + v, ksWeight i + w0)
-
-        rel :: KsSelection3 -> KsSelection3 -> Bool
-        rel sn1 sn2 = ksValue  sn1 >= ksValue  sn2
-                   && ksWeight sn1 <= ksWeight sn2
-
-mergeBy :: (a -> a -> Bool) -> [[a]] -> [a]
-mergeBy cmp = foldr merge []
-    where
-        merge xs [] = xs
-        merge [] ys = ys
-        merge xxs@(x:xs) yys@(y:ys)
-            | cmp x y = x : merge xs yys
-            | otherwise = y : merge xxs ys
-
-maxWith :: (Ord b) => (a -> b) -> [a] -> a
-maxWith = maximumBy . comparing
